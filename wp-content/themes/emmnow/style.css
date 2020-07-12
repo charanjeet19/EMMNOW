@@ -1,0 +1,190 @@
+/*
+Theme Name: eMMNOW
+Description: eMMNOW
+Author: admin
+Template: realestate-7
+Version: 2.9.8
+*/
+
+
+.edd_cart_remove_item_btn {
+	display:none;
+}
+
+#edd_user_history th {
+	background: #32EE7A !important;
+}
+
+.purchasetable {
+	min-height: 420px;
+}
+#confirmationhide {
+	display:none;
+}
+
+#edd_cc_address , #edd_checkout_user_info{
+	display:none;
+}
+#docusignloadframe {
+	width: 100%;
+	height: 1400px;
+}
+
+.page-template-template-docusign-iframe .inner-content {
+	padding: 0;
+	border: navajowhite;
+	border-radius: 0;
+}
+
+.page-id-4417 #header-wrap , .page-id-4417 #topbar-wrap , .page-id-4417 #wpadminbar , .page-id-4417 footer.footer , .page-id-4418 #header-wrap , .page-id-4418 #topbar-wrap , .page-id-4418 #wpadminbar , .page-id-4418 footer.footer , .page-id-4471 #single-header , body.page-id-4414 {
+	display:none;
+}
+li.registerdiff {
+	display: inline-block;
+}
+
+li.registerdiff a {
+	background: none;
+	border: 0;
+	color: #29333d;
+	font-size: 12px;
+	padding: 6px 7px;
+}
+
+#topbar-wrap li.login-register a, .user-listing-count, .aq-block-aq_widgets_block .widget h5, .home .advanced-search.idx form, #page .featured-map #map, .cta, .searching-on.search-style-two, .search-style-two .search-params, .listing-submit, .placeholder, ul.user-nav li a, .no-registration, thead, .single-listings #listing-sections, .ajaxSubmit {
+	background-color: #32EE7A;
+}
+#modal .close, .advanced-search h4, .featured-listings header.masthead, .listing .listing-imgs-attached, .advanced-search h3, .flex-caption p, a.btn, .btn, .lrg-icon, .listing-info .price, #reply-title small a, .featured-listings a.view-all, .comment-reply-link, .grid figcaption a, input.btn, input[type="submit"], input[type="reset"], input[type="button"], input[type="btn"], button, .flex-direction-nav a, .user-listing-count, #compare-panel-btn, span.map-toggle, span.search-toggle, .infobox .price, .pagination span.current, #progress-bar li.active::before, #progress-bar li.active::after, #progress-bar li.active::before, #progress-bar li.active::after, .pagination .current a, .package-posts .popular-heading, input[type="checkbox"].custom-select:checked + span::before, input[type="checkbox"].custom-select:checked + span::after, .partners h5 span {
+	background: #32EE7A;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 100% !important;
+	width:100% !important;
+}
+ul.amenities , .search-listingfooter {
+    display:none;
+}
+
+.media-left .media-object , .media-heading>a {
+    cursor: text;
+}
+.userpro-input > input {
+	background-color: #fff !important;
+}
+.userpro-head {
+	background: none !important;
+}
+div.userpro-head div.userpro-left {
+	font-size: 22px !important;
+	text-align: center;
+	width: 100%;
+	color: #262624;
+}
+.userpro-field.userpro-submit.userpro-column {
+	text-align: center;
+}
+.userpro-field .userpro-field-icon {
+	display: none;
+}
+.userpro {
+	width: 350px;
+}
+.userpro-section.userpro-column.userpro-collapsible-1.userpro-collapsed-0 {
+	display: none !important;
+}
+.mo-openid-app-icons>p {
+    width: auto !important;
+}
+span.userpro-tip {
+	display: none;
+}
+.user-logged-in li.membership {
+    display:none;
+}
+.userpro-button.register-navg {
+	display: none !important;
+	width: 100%;
+	padding: 6px 0 !important;
+	height: auto !important;
+}
+.elog {
+	width: 37px;
+	margin-top: 5px;
+	float: left;
+}
+.elementor-4716 .elementor-element.elementor-element-57e6807 .elementor-heading-title {
+	width: 367px;
+	margin: 0 auto;
+}
+.elementor-4716 .elementor-element.elementor-element-57e6807 .elementor-heading-title {
+	width: 367px;
+	margin: 0 auto;
+}
+.elementor-4487 .elementor-element.elementor-element-57e6807 .elementor-heading-title {
+	width: 446px;
+	margin: 0 auto;
+}
+.elementor-3757 .elementor-element.elementor-element-135d855 .elementor-heading-title {
+	width: 492px;
+	margin: 0 auto;
+}
+.elementor-4131 .elementor-heading-title.elementor-size-default {
+    width: 751px;
+	margin: 0 auto;
+}
+.elementor-3 .elementor-element.elementor-element-bd3ff7a .elementor-heading-title {
+	width: 594px;
+	margin: 0 auto;
+}
+.elementor-4284 .elementor-element.elementor-element-4bc4b06 .elementor-heading-title {
+	margin: 0 auto;
+	width: 395px;
+	text-align: center;
+}
+.elementor-4284 .elementor-element.elementor-element-94bb613 .elementor-heading-title {
+		margin: 0 auto;
+	width: 395px;
+	text-align: center;
+}
+.elementor-4284 .elementor-element.elementor-element-6fbced7 .elementor-heading-title {
+margin: 0 auto;
+	width: 600px;
+	text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .elementor-4284 .elementor-element.elementor-element-4bc4b06 .elementor-heading-title {
+	font-size: 11vw;
+		width: 385px;
+}
+.elementor-4284 .elementor-element.elementor-element-94bb613 .elementor-heading-title {
+		font-size: 11vw;
+			width: 363px;
+}
+.elementor-4284 .elementor-element.elementor-element-6fbced7 .elementor-heading-title {
+	font-size: 6vw;
+	width: 341px;
+}
+.elementor-4284 .elementor-element.elementor-element-6fbced7 .elementor-heading-title .elog {
+	width: 25px;
+	margin-top: 0;
+}
+.elementor-4716 .elementor-element.elementor-element-57e6807 .elementor-heading-title {
+	font-size: 39px;
+	width: 320px;
+}
+.elementor-4716 .elementor-element.elementor-element-57e6807 .elementor-heading-title .elog {
+    margin-top: 3px;
+width: 33px;
+}
+.elementor-4487 .elementor-element.elementor-element-57e6807 .elementor-heading-title {
+	font-size: 32px;
+    width: 317px;
+}
+.elementor-4487 .elementor-element.elementor-element-57e6807 .elementor-heading-title .elog {
+    width: 27px;
+    margin-top: 3px;
+}
+
+}

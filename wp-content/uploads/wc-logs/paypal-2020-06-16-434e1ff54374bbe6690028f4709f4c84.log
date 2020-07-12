@@ -1,0 +1,79 @@
+2020-06-16T16:49:46+00:00 INFO Generating payment form for order 5433. Notify URL: https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+2020-06-16T16:49:46+00:00 INFO PayPal Request Args for order 5433: Array
+(
+    [cmd] => _cart
+    [business] => ryan.vidmar@emmnow.net
+    [no_note] => 1
+    [currency_code] => USD
+    [charset] => utf-8
+    [rm] => 2
+    [upload] => 1
+    [return] => https://emmnow.net/afldev/checkout-2/order-received/5433/?key=wc_order_ZhrjeXXKKeZgn&utm_nooverride=1
+    [cancel_return] => https://emmnow.net/afldev/cart/?cancel_order=true&order=wc_order_ZhrjeXXKKeZgn&order_id=5433&redirect&_wpnonce=2deb63b18e
+    [page_style] => 
+    [image_url] => https://emmnow.net/afldev/wp-content/uploads/2020/05/mmnow-01paypal.jpg
+    [paymentaction] => sale
+    [invoice] => eMMNOW5433
+    [custom] => {"order_id":5433,"order_key":"wc_order_ZhrjeXXKKeZgn"}
+    [notify_url] => https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [discount_amount_cart] => 5.00
+    [item_name_1] => Utilities
+    [quantity_1] => 1
+    [amount_1] => 25.99
+    [item_number_1] => 
+    [bn] => WooThemes_Cart
+)
+
+2020-06-16T19:09:51+00:00 INFO Generating payment form for order 5435. Notify URL: https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+2020-06-16T19:09:51+00:00 INFO PayPal Request Args for order 5435: Array
+(
+    [cmd] => _cart
+    [business] => ryan.vidmar@emmnow.net
+    [no_note] => 1
+    [currency_code] => USD
+    [charset] => utf-8
+    [rm] => 2
+    [upload] => 1
+    [return] => https://emmnow.net/afldev/checkout/order-received/5435/?key=wc_order_PjGzFLAWyUNz8&utm_nooverride=1
+    [cancel_return] => https://emmnow.net/afldev/cart/?cancel_order=true&order=wc_order_PjGzFLAWyUNz8&order_id=5435&redirect&_wpnonce=8bb312e2b5
+    [page_style] => 
+    [image_url] => https://emmnow.net/afldev/wp-content/uploads/2020/05/mmnow-01paypal.jpg
+    [paymentaction] => sale
+    [invoice] => eMMNOW5435
+    [custom] => {"order_id":5435,"order_key":"wc_order_PjGzFLAWyUNz8"}
+    [notify_url] => https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Postal Address + Utilities
+    [quantity_1] => 1
+    [amount_1] => 29.99
+    [item_number_1] => 
+    [bn] => WooThemes_Cart
+)
+

@@ -1,0 +1,11 @@
+2020-06-25T15:13:23+00:00 CRITICAL Uncaught Error: Call to a member function is_rtl() on null in /home/emmnow/public_html/afldev/wp-content/plugins/easy-registration-forms/includes/functions.php:2041
+Stack trace:
+#0 /home/emmnow/public_html/afldev/wp-content/plugins/easy-registration-forms/includes/class-frontend.php(60): erforms_global_localize()
+#1 /home/emmnow/public_html/afldev/wp-content/plugins/easy-registration-forms/includes/class-frontend.php(80): ERForms_Frontend->register_scripts()
+#2 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(287): ERForms_Frontend->load_scripts('')
+#3 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /home/emmnow/public_html/afldev/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /home/emmnow/public_html/afldev/wp-includes/script-loader.php(2294): do_action('wp_enqueue_scri...')
+#6 /home/emmnow/public_html/afldev/wp-includes/class-wp-customize-manager.php(454): wp_enqueue_scripts()
+#7 /home/emmnow/public_html/afldev/wp-includes/cl in /home/emmnow/public_html/afldev/wp-content/plugins/easy-registration-forms/includes/functions.php on line 2041
+

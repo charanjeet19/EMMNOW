@@ -1,0 +1,94 @@
+<h1>AGREEMENT FOR MAINTENANCE OF A WEBSITE</h1>
+<p>FOR <strong>[clientname]</strong> of <strong>[projectname]</strong></p> 
+<p><strong>[businessname]</strong> will be referred to as the designer in this document. </p>
+<p><strong>[projectname]</strong> will be referred to as the client in this document. </p>
+<h2>AUTHORIZATION</h2>
+
+<p>The client is engaging the designer as an independent designer for the specific project of maintaining a World Wide website to be installed on the client's web space on a web hosting service's 
+computer.</p>
+
+<p>The client hereby authorizes the designer to access their account, and authorizes the web hosting service to provide the designer with "write permission" for the client's web page directory, cgi-bin directory, and any other directories or programs which need to be accessed for this project.</p>
+
+<p>The client also authorizes the designer to publicize the completed website to Web search engines, as well as other Web directories, indexes and to promote <strong>[businessname]</strong> with a link back located on a visible but unobtrusive section of the website.</p>
+
+<h2>DESCRIPTION OF PROJECT AND PROCESS</h2>
+
+<ol>
+    <li><strong>[businessname]</strong> will maintain a website for individual or corporate use to the specifications required by the client. The client is required to either give exact specifications or have <strong>[businessname]</strong> do their best to meet the general requirements laid out by the client.</li>
+
+    <li>The estimate describe in this document is only referring to the site specifications given by the client at the time this document was printed. The date can be found on the bottom of this page. Additional work not included with this document will require further payment deemed necessary by <strong>[businessname]</strong>. If the web site requires revisions the client will be billed accordingly and a new invoice will be issued.</li>
+
+    <li>The process for the presentation of graphics consists of <strong>[businessname]</strong> providing drafts and asking for feedback from the client. The client then gives feedback or approves of the images being used before they are put in place. The estimate assumes 2 rounds of this process will suffice for image creation.</li>
+
+    <li>All content on the website will be provided by the client for <strong>[businessname]</strong> to use. This content will be displayed as final drafts on the website and should be pre-read and checked by the client before issuing for use with the website. The content should be labelled depending on the placement that it is needed on the site. For example, the" About Us" content should contain information about the individual or corporation and be labelled as such.</li>
+
+    <li>To maintain our portfolio credentials and integrity we, <strong>[businessname]</strong> is also entitled to reproduce samples of the client's website in our portfolio and in our marketing material.</li>
+</ol>
+
+<h2>ASSIGNMENT OF PROJECT</h2>
+
+<p><strong>[businessname]</strong> reserve the right to assign subcontractors to this project to insure the right fit for the job as well as on-time completion. <strong>[businessname]</strong> will bring to the attention of the client if any subcontractors will be used to work on the client's project and that subcontractor will be required to sign an NDA before any information is given and before any work is assigned to the subcontractor.</p>
+
+<h2>SINGLE POINT OF CONTACT</h2>
+
+<p><strong>[clientname]</strong> has been added to this contract as a single point of contact between <strong>[businessname]</strong> and <strong>[projectname]</strong>. All changes, updates, approvals, and modifications should come through this person in order to keep the project on task and on time. Any inquiries made outside of this point of contact will be pushed through the point of contact for verification.</p>
+
+<h2>PRICE ESTIMATE AND PAYMENT ARRANGEMENTS</h2>
+
+<ol>
+    <li><strong>[businessname]</strong> estimates that the cost for maintaining the website described in the site specification will be <strong>[contractcurrency][contractamount] per month.</strong></li>
+
+    <li>Payments will be made on the 1st (first) of every month for <strong>[monthly] months</strong>. <strong>[contractcurrency][contractamount]</strong> is due upon the signing of this agreement before work begins and will continue for <strong>[monthly] months</strong>. After the initial contract period, this maintenance agreement will be automatically renewed to continue unless otherwise specified by the client.</li>
+</ol>
+
+<p>Payments can be made via check or on-line via credit card or Paypal.  If a payment is made on-line using a credit card, Paypal account, or any other means of electronic payment, the payment may be susceptible to fees charge to process the payment.</p>
+
+<p>Delinquent bills will be assessed a [contractcurrency]15 charge if payment is not received within 15 days of the due date. If an amount remains delinquent 30 days after its due date, an additional 10% penalty will be added for each month of delinquency. If an amount remains delinquent 120 days after its due date, <strong>[businessname]</strong> reserves the right to remove the webpage(s) from viewing on the Internet until payment is made. Any items created by <strong>[businessname]</strong> including logos, mock-ups, website designs, and domain names remain property and copyright of <strong>[businessname]</strong> until the payment is paid in full by the client.</p>
+
+<p>In case collection proves necessary, the client agrees to pay all fees incurred by that process. This agreement becomes effective only when signed by the designer or a <strong>[businessname]</strong>representative.</p>
+
+<h2>REFUND POLICY</h2>
+
+<p>If the client halts work and applies by registered letter for a refund within 30 days, to <strong>[businessname]</strong>, work completed shall be billed at half of the initial payment, the balance of which shall be returned to the client. If, at the time of the request for refund, work has been completed beyond the amount covered by the initial payment, the client shall be liable to pay for all work completed at the hourly rate stated above. No portion of this initial payment will be refunded unless written application is made within 30 days of signing this contract.</p>
+
+<h2>REVISIONS AND REWRITES</h2>
+
+<p>Changes requested by the client that are not included in this contract and / or project scope will be billed at an hourly rate of <strong>[contractcurrency][hourlyrate]</strong> per hour. This rate shall also govern additional work authorized beyond the maximums specified above for such services as general Internet orientation education, marketing consulting, web page design, editing, modifying product pages and databases in an on-line store, art, photo, graphics services, and helping clients learn how to use their own web page editor.</p>
+
+<p>All billable changes will be documented and brought to the attention of the client before any charges are accrued.</p>
+
+<h2>SOLE AGREEMENT</h2>
+
+<p>The agreement contained in this "AGREEMENT FOR MAINTENANCE OF A WEB SITE" constitutes the sole agreement between the designer (of <strong>[businessname]</strong>) and the client regarding maintenance the agreed upon website. Any additional work not specified in this contract must be authorized by a written change order.</p>
+
+<h2>LEGAL INFORMATION</h2>
+
+<p><strong>[businessname]</strong> does not warrant that the functions contained in these web pages or the Internet website will be uninterrupted or error-free. The entire risk as to the quality and performance of the web pages and website is with the client or hosting company provided to the client by the designer.</p>
+
+<p>In no event will <strong>[businessname]</strong> be liable to the client or any third party for any damages, including any lost profits, lost savings or other incidental, consequential or special damages arising out of the operation of or inability to operate these web pages or website, even if <strong>[businessname]</strong> has been advised of the possibility of such damages.</p>
+
+<p>If any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from this agreement and shall not affect the validity and enforceability of any remaining provisions.</p><strong>Copyrights and Trademarks</strong>
+
+<p>The client represents to <strong>[businessname]</strong> and unconditionally guarantees that any elements of text, graphics, photos, designs, trademarks, or other artwork furnished to <strong>[businessname]</strong> for inclusion in web pages are owned by the client, or that the client has permission from the rightful owner to use each of these elements, and will hold harmless, protect, and defend <strong>[businessname]</strong> and its subcontractors from any claim or suit arising from the use of such elements furnished by the client.</p>
+
+<strong>Laws Affecting Electronic Commerce</strong>
+
+<p>From time to time governments enact laws and levy taxes and tariffs affecting Internet electronic commerce. The client agrees that the client is solely responsible for complying with such laws, taxes, and tariffs, and will hold harmless, protect, and defend <strong>[businessname]</strong> and its subcontractors from any claim, suit, penalty, tax, or tariff arising from the client's exercise of Internet electronic commerce.</p>
+
+<strong>Copyright to Web pages</strong>
+
+<p>Copyright to the finished assembled work produced by the designer (of <strong>[businessname]</strong>) is owned by <strong>[businessname]</strong> until final payment of this contract, the client is assigned rights to use as a website, the design, graphics, and text contained in the finished assembled website. <strong>[businessname]</strong> and their subcontractors retain the right to display graphics and other Web design elements as examples of their work in their respective portfolios.</p>
+<div style="page-break-before: always;"></div>
+<hr>
+
+<p>The undersigned agrees to the terms of this agreement on behalf of his or her organization or business.</p>
+
+<p>I, <strong>[clientname]</strong>, sign this document stating I have read and agreed to all of the above in cooperation with <strong>[businessname]</strong> in maintenance of <strong>[projectname]</strong>. I also agree that if under any circumstances I cannot afford to pay the remaining balance I forfeit the deposit and will have everything designed by <strong>[businessname]</strong> revoked and the contract terminated until I can pay the remaining balance in full.</p>
+
+<p>All terms of this contract are contingent upon strike, accidents, or other causes beyond our control.</p>
+
+<h2>[businessname] Representative</h2>
+<div style="float:right; width:50%; text-align:right; line-height:75px; vertical-align:middle;">[signedbydate] (electronically signed)</div>
+<div style=" float:left; width:50%;"><span class="signedby">[signedby]</span></div>
+<div style="clear:both;"></div>
+<h2>Client Representative</h2>

@@ -1,0 +1,39 @@
+2020-06-24T21:17:25+00:00 INFO Generating payment form for order 5455. Notify URL: https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+2020-06-24T21:17:25+00:00 INFO PayPal Request Args for order 5455: Array
+(
+    [cmd] => _cart
+    [business] => ryan.vidmar@emmnow.net
+    [no_note] => 1
+    [currency_code] => USD
+    [charset] => utf-8
+    [rm] => 2
+    [upload] => 1
+    [return] => https://emmnow.net/afldev/checkout/order-received/5455/?key=wc_order_Nj3AL12elXgqq&utm_nooverride=1
+    [cancel_return] => https://emmnow.net/afldev/cart/?cancel_order=true&order=wc_order_Nj3AL12elXgqq&order_id=5455&redirect&_wpnonce=5bcfa77922
+    [page_style] => 
+    [image_url] => https://emmnow.net/afldev/wp-content/uploads/2020/05/mmnow-01paypal.jpg
+    [paymentaction] => sale
+    [invoice] => eMMNOW5455
+    [custom] => {"order_id":5455,"order_key":"wc_order_Nj3AL12elXgqq"}
+    [notify_url] => https://emmnow.net/afldev/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_a] => ***
+    [night_phone_b] => ***
+    [night_phone_c] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Postal Address
+    [quantity_1] => 2
+    [amount_1] => 9.9
+    [item_number_1] => 
+    [bn] => WooThemes_Cart
+)
+

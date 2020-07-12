@@ -1,0 +1,10 @@
+2020-06-13T20:00:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function mo_openid_link_account(), 1 passed in /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /home/emmnow/public_html/afldev/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php:1689
+Stack trace:
+#0 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(287): mo_openid_link_account('test-user')
+#1 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/emmnow/public_html/afldev/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/emmnow/public_html/afldev/wp-content/themes/realestate-7/admin/theme-functions.php(4752): do_action('wp_login', 'test-user')
+#4 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(287): ct_login_member('')
+#5 /home/emmnow/public_html/afldev/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /home/emmnow/public_html/afldev/wp-includes/plugin.php(478): WP_ in /home/emmnow/public_html/afldev/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php on line 1689
+

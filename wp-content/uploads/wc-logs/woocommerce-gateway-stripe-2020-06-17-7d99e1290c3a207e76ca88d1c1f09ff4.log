@@ -1,0 +1,51 @@
+2020-06-17T01:30:55+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+customers request: Array
+(
+    [email] => vidmar60@gmail.com
+    [description] => Name: ryan vidmar, Username: ryan
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-06-17T01:30:56+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_HTniXg7LzdTig8
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-06-17T18:21:14+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-17T18:21:32+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-17T18:23:22+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+

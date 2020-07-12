@@ -1,0 +1,72 @@
+2020-06-16T15:38:01+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-16T15:45:21+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-16T15:48:13+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-16T19:10:52+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+customers request: Array
+(
+    [email] => Lindsey0753@gmail.com
+    [description] => Name: Lindsey Vidmar, Username: Lindsey
+    [metadata] => Array
+        (
+        )
+
+)
+
+====End Log====
+
+
+2020-06-16T19:10:52+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Error: stdClass Object
+(
+    [token_id] => 
+    [customer] => cus_HThahh6WWxvwsK
+    [source] => 
+    [source_object] => 
+)
+
+====End Log====
+
+
+2020-06-16T19:16:19+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-16T19:35:55+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-06-16T19:54:04+00:00 DEBUG 
+====Stripe Version: 4.4.0====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
