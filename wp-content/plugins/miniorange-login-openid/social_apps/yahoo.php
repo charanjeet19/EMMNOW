@@ -1,7 +1,7 @@
 <?php
 
 
-class yahoo
+class mo_yahoo
 {
     public $color="#400092";
     public $scope="read";

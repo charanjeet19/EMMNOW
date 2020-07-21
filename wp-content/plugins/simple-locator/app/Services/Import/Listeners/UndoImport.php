@@ -43,7 +43,7 @@ class UndoImport extends ImportListenerBase
 	*/
 	private function setIDs()
 	{
-		$this->import_id = ( isset($_POST['undo_import_id']) ) ? intval($_POST['undo_import_id']) : 0;
+		$this->import_id = ( isset($_POST['undo_import_id']) ) ? intval(sanitize_text_field($_POST['undo_import_id'])) : 0;
 		$this->post_ids = $this->import_repo->getImportedPostIDs($this->import_id);
 	}
 
@@ -63,7 +63,7 @@ class UndoImport extends ImportListenerBase
 	*/
 	protected function success($step)
 	{
-		$url = admin_url('options-general.php?page=wp_simple_locator&tab=import&success=' . __('Import successfully undone. All post data has been removed.', 'wpsimplelocator'));
+		$url = admin_url('options-general.php?page=wp_simple_locator&tab=import&success=' . __('Import successfully undone. All post data has been removed.', 'simple-locator'));
 		return header('Location:' . $url);
 	}
 

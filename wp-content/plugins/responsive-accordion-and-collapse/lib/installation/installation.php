@@ -29,9 +29,8 @@ function wpsm_ac_header_info() {
 		.wpsm_ac_h_i{
 			background:url('<?php echo wpshopmart_accordion_directory_url.'img/slideshow-01.jpg'; ?>') 50% 0 no-repeat fixed;
 			-webkit-box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
--moz-box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
-box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
-			
+			-moz-box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
+			box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
 			margin-left: -20px;
 			font-family: Myriad Pro ;
 			cursor: pointer;
@@ -55,7 +54,6 @@ box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
 			font-size: 18px;
 			padding: 0 0 15px 15px;
 		}
-
 		.wpsm_ac_h_i a{
 		text-decoration: none;
 		}
@@ -65,8 +63,8 @@ box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
 		}
 		.texture-layer {
 			background: rgba(0,0,0,0);
-    padding-top: 0px;
-	padding: 0px 0 23px 0;
+			padding-top: 0px;
+			padding: 0px 0 23px 0;
 		}
 		.wpsm_ac_h_i  ul{
 			padding:0px 20px 0px 20px;
@@ -80,87 +78,87 @@ box-shadow: 0px 13px 21px -10px rgba(128,128,128,1);
 			
 		}
 		.wpsm_ac_h_i  li i{
-		margin-right:10px ;
-margin-bottom:10px;		
+			margin-right:10px ;
+			margin-bottom:10px;		
 		}
-		 
-		  .wpsm_ac_h_i .btn-danger{
-			      font-size: 29px;
-				  background-color: #000000;
-				  border-radius:1px;
-				  margin-right:10px;
-				      margin-top: 0px;
-					  border-color:#000;
-				 
-		  }
-		  .wpsm_ac_h_i .btn-success{
-			      font-size: 28px;
-				  border-radius:1px;
-				      background-color: #ffffff;
-    border-color: #ffffff;
-	color:#000;
-		  }
-		  .pro-div-wrapper{
-		  overflow:hidden;display:block;width:100%
-		  }
+		.wpsm_ac_h_i .btn-danger{
+			font-size: 29px;
+			background-color: #000;
+			border-radius:1px;
+			margin-right:10px;
+			margin-top: 0px;
+			border-color:#000;		 
+		}
+		.wpsm_ac_h_i .btn-success{
+			font-size: 28px;
+			border-radius:1px;
+			background-color: #fff;
+			border-color: #fff;
+			color:#000;
+		}
+		.pro-div-wrapper{
+			overflow:hidden;
+			display:block;
+			width:100%;
+		}
 		
 		</style>
 		<div class="wpsm_ac_h_i ">
 			<div class="texture-layer">
 				
-					<div class="wpsm_ac_h_b"><a class="btn btn-danger btn-lg " href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">Try Accordion/Faq Pro Now</a><a class="btn btn-success btn-lg " href="http://demo.wpshopmart.com/accordion-pro/" target="_blank">View Demo</a></div>
-					<div style="overflow:hidden;display:block;width:100%;text-align:center">
+				<div class="wpsm_ac_h_b"><a class="btn btn-danger btn-lg " href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">Try Accordion/Faq Pro Now</a><a class="btn btn-success btn-lg " href="http://demo.wpshopmart.com/accordion-pro/" target="_blank">View Demo</a></div>
+				<div style="overflow:hidden;display:block;width:100%;text-align:center">
 					<h1 style="color:#fff;font-size:30px;text-transform:uppercase">Unlock More Features In Pro version</h1>
+				</div>
+				<div class="pro-div-wrapper">
+					<div class="col-md-3">
+						<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
+							<ul>
+								<li> <i class="fa fa-check"></i>18+ Design Templates </li>
+								<li> <i class="fa fa-check"></i>30 Content Animations </li>
+								<li> <i class="fa fa-check"></i>Individual Color FAQ</li>
+								<li> <i class="fa fa-check"></i>Add  Custom Image Icon </li>
+								<li> <i class="fa fa-check"></i>12 Open/Close Icons Sets </li>
+								
+							</ul>
+						</a>
 					</div>
-					<div class="pro-div-wrapper">
-						<div class="col-md-3">
-							<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
-								<ul>
-									<li> <i class="fa fa-check"></i>18+ Design Templates </li>
-									<li> <i class="fa fa-check"></i>30 Content Animations </li>
-									<li> <i class="fa fa-check"></i>Individual Color FAQ</li>
-									<li> <i class="fa fa-check"></i>Add  Custom Image Icon </li>
-									<li> <i class="fa fa-check"></i>12 Open/Close Icons Sets </li>
-									
-								</ul>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
-								<ul>
-									<li> <i class="fa fa-check"></i>4 Overlay Effect </li>
-									<li> <i class="fa fa-check"></i>500+ Google Fonts </li>
-									<li> <i class="fa fa-check"></i>Accordion Scroll Effect </li>
-									<li> <i class="fa fa-check"></i>Set Accordion Height </li>
-									<li> <i class="fa fa-check"></i>On Hover Accordion </li>
-									
-								</ul>
-							</a>	
-						</div>
-						<div class="col-md-3">
-							<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
-								<ul>
-									<li> <i class="fa fa-check"></i>Widget Option </li>
-									<li> <i class="fa fa-check"></i>Unlimited Shortcode </li>
-									<li> <i class="fa fa-check"></i>Unlimited Color Scheme </li>
-									<li> <i class="fa fa-check"></i>Drag And Drop Builder </li>
-									<li> <i class="fa fa-check"></i>Preview Option </li>
-								</ul>
-							</a>	
-						</div>
-						<div class="col-md-3">
-							<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
-								<ul>
-									<li> <i class="fa fa-check"></i>Border Customization </li>
-									<li> <i class="fa fa-check"></i>Collapse Mode </li>
-									<li> <i class="fa fa-check"></i>Border Color Customization </li>
-									<li> <i class="fa fa-check"></i>High Priority Support </li>
-									<li> <i class="fa fa-check"></i>All Browser Compatible </li>
-								</ul>
-							</a>	
-						</div>
-						
+					<div class="col-md-3">
+						<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
+							<ul>
+								<li> <i class="fa fa-check"></i>4 Overlay Effect </li>
+								<li> <i class="fa fa-check"></i>500+ Google Fonts </li>
+								<li> <i class="fa fa-check"></i>Accordion Scroll Effect </li>
+								<li> <i class="fa fa-check"></i>Set Accordion Height </li>
+								<li> <i class="fa fa-check"></i>On Hover Accordion </li>
+								
+							</ul>
+						</a>	
 					</div>
+					<div class="col-md-3">
+						<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
+							<ul>
+								<li> <i class="fa fa-check"></i>Widget Option </li>
+								<li> <i class="fa fa-check"></i>Unlimited Shortcode </li>
+								<li> <i class="fa fa-check"></i>Unlimited Color Scheme </li>
+								<li> <i class="fa fa-check"></i>Drag And Drop Builder </li>
+								<li> <i class="fa fa-check"></i>Preview Option </li>
+							</ul>
+						</a>	
+					</div>
+					<div class="col-md-3">
+						<a href="https://wpshopmart.com/plugins/accordion-pro/" target="_blank">
+							<ul>
+								<li> <i class="fa fa-check"></i>Border Customization </li>
+								<li> <i class="fa fa-check"></i>Collapse Mode </li>
+								<li> <i class="fa fa-check"></i>Border Color Customization </li>
+								<li> <i class="fa fa-check"></i>High Priority Support </li>
+								<li> <i class="fa fa-check"></i>All Browser Compatible </li>
+							</ul>
+						</a>	
+					</div>
+					
+				</div>
 					
 				
 			</div>

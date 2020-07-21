@@ -493,3 +493,46 @@ form.booking_form {
     background-color:#f9f2f4;
     border-radius: 2px;
 }
+
+
+/* Different Forms */
+/* Booking Form - 2 columns   //FixIn: 8.7.7.15 */
+.wpbc_form_columns {
+    width: 90%;
+    margin-top:1em;
+}
+.wpbc_form_columns .wpbc_form_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.wpbc_form_columns .wpbc_form_field {
+    flex: 1 1 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0 3% 0 0;
+}
+.wpbc_form_columns .wpbc_form_field label {
+    flex: 0 1 auto;
+    margin-right: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 200px;
+    font-weight: 600;
+    margin-top: 1em;
+}
+.wpbc_form_columns .wpbc_form_field .wpdev-form-control-wrap {
+    width: 100%;
+}
+.booking_form .wpbc_form_columns .form-group .controls select,
+.booking_form .wpbc_form_columns select,
+.booking_form .wpbc_form_columns input[type="text"] {
+    width: 95%;
+}
+.booking_form .wpbc_form_columns textarea {
+    width: 98%;
+}

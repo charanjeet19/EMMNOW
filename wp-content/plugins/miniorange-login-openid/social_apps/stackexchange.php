@@ -1,7 +1,7 @@
 <?php
 
 
-class stackexchange
+class mo_stackexchange
 {
     public $color="#163B7F";
 }

@@ -22,7 +22,7 @@
 /** The name of the database for WordPress */
 //define( 'DB_NAME', 'emmnow_emmnow1' );
 
-define( 'DB_NAME', 'emmnow_afldev' );
+define( 'DB_NAME', 'emmnow_live' );
 
 /** MySQL database username */
 define( 'DB_USER', 'emmnow_emmnow' );

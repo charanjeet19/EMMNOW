@@ -835,4 +835,8 @@
  $wpbc_all_translations[] = __('Shuffle', 'booking'); 
  $wpbc_all_translations[] = __('Apply discount coupon code directly to days cost', 'booking'); 
  $wpbc_all_translations[] = __('Check this box if you want apply discount coupon codes directly to days cost, without additional costs.', 'booking'); 
+ $wpbc_all_translations[] = __('Calendar next to form', 'booking'); 
+ $wpbc_all_translations[] = __('PayPal fee', 'booking'); 
+ $wpbc_all_translations[] = __('PayPal Fee', 'booking'); 
+ $wpbc_all_translations[] = __('If you need to add %sPayPal tax fee%s payment (only for PayPal payment system), then enter amount of tax fee in percents', 'booking'); 
  } 

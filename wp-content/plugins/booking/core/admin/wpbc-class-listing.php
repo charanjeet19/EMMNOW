@@ -239,10 +239,10 @@ class WPBC_Booking_Listing_Table {
 
                 $payment_status_titles = get_payment_status_titles();
                 $row_data['current_payment_status_titles']  = array_search( $row_data['pay_status'], $payment_status_titles );
-                if ( $row_data['current_payment_status_titles'] === false ) 
+                if ( $row_data['current_payment_status_titles'] === false )
                      $row_data['current_payment_status_titles'] = $row_data['pay_status'];
 
-                
+
                 if ( $row_data['is_paid'] ) {
                     //$row_data['pay_print_status'] = __( 'Paid OK', 'booking' );
                     $row_data['pay_print_status'] = $row_data['pay_status'];			//Payment status with  payment system description,  like PayPal:Ok	//FixIn: 8.2.1.25
@@ -327,7 +327,7 @@ class WPBC_Booking_Listing_Table {
                         <?php make_bk_action('wpbc_booking_listing_show_label_resource', $row_data['resource_name'], $this->url['request'] .'&wh_booking_type='. $row_data['resource'] );  ?>
                         <span class="label label-default label-pending <?php if ($row_data['is_approved']) echo ' hidden_items '; ?> "><?php _e('Pending' ,'booking'); ?></span>
                         <span class="label label-default label-approved <?php if (! $row_data['is_approved']) echo ' hidden_items '; ?>"><?php _e('Approved' ,'booking'); ?></span>
-                        <?php make_bk_action('wpdev_bk_listing_show_payment_label', $row_data['is_paid'],  $row_data['pay_print_status'], $row_data['current_payment_status_titles']);  ?>                        
+		                <?php make_bk_action( 'wpdev_bk_listing_show_payment_label', $row_data['is_paid'], $row_data['pay_print_status'], $row_data['current_payment_status_titles'], $row_data['pay_status'] );  //FixIn: 8.7.7.13		 ?>
                         <span class="label label-trash label-danger <?php if (! $row_data['is_trash']) echo ' hidden_items '; ?> "><?php _e('In Trash / Rejected' ,'booking'); ?></span><?php //FixIn: 6.1.1.10 ?>
 		                <?php //FixIn: 8.4.5.10
 		                if ( ! empty ( $row_data['sync_gid'] ) ) {

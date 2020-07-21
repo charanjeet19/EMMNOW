@@ -32,7 +32,6 @@ var WPSL_SearchHistoryMap = function(locations, container)
 			mapTypeControl: false,
 			zoom: 8,
 			styles: mapstyles,
-			scrollwheel: false,
 			panControl : false
 		}
 			

@@ -1024,10 +1024,28 @@ function wpbc_get_sql_for_booking_listing( $args ){
         }
 
     } else {
-        
-        if ( strpos( $wh_booking_id, ',' ) !== false )  $sql_where = " WHERE bk.booking_id IN (" . $wh_booking_id . ") ";
-        else                                            $sql_where = " WHERE bk.booking_id = " . $wh_booking_id . " ";
-  
+
+	    //FixIn: 8.7.7.10
+    	if ( strpos( $wh_booking_id, '<' ) !== false ) {
+		    $wh_booking_id = str_replace( '<', '', $wh_booking_id );
+		    $wh_booking_id = intval( $wh_booking_id );
+		    $sql_where = " WHERE bk.booking_id < " . $wh_booking_id . " ";
+	    }
+
+    	else if ( strpos( $wh_booking_id, '>' ) !== false ) {
+		    $wh_booking_id = str_replace( '>', '', $wh_booking_id );
+		    $wh_booking_id = intval( $wh_booking_id );
+		    $sql_where = " WHERE bk.booking_id > " . $wh_booking_id . " ";
+
+	    }
+
+    	else if ( strpos( $wh_booking_id, ',' ) !== false ) {
+		    $sql_where = " WHERE bk.booking_id IN (" . $wh_booking_id . ") ";
+
+	    } else {
+		    $sql_where = " WHERE bk.booking_id = " . $wh_booking_id . " ";
+	    }
+
         // Check  if searching booking is belonging to specific user in  Booking Calendar MultiUser version 
         $sql_where = apply_bk_filter('update_where_sql_for_getting_bookings_in_multiuser', $sql_where );
 

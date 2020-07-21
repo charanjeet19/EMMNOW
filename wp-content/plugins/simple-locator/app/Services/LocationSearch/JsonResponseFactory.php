@@ -18,7 +18,7 @@ class JsonResponseFactory
 	*/
 	private function setData()
 	{
-		$taxonomies = ( isset($_POST['taxonomies']) ) ? $_POST['taxonomies'] : null;
+		$taxonomies = ( isset($_POST['taxonomies']) ) ? sanitize_text_field($_POST['taxonomies']) : null;
 		$this->data = array(
 			'address' => sanitize_text_field($_POST['address']),
 			'formatted_address' => sanitize_text_field($_POST['formatted_address']),
@@ -28,7 +28,7 @@ class JsonResponseFactory
 			'unit' => sanitize_text_field($_POST['unit']),
 			'geolocation' => sanitize_text_field($_POST['geolocation']),
 			'taxonomies' => $taxonomies,
-			'allow_empty_address' => $_POST['allow_empty_address']
+			'allow_empty_address' => sanitize_text_field($_POST['allow_empty_address'])
 		);
 	}
 

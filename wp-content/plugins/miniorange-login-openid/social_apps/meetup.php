@@ -1,7 +1,7 @@
 <?php
 
 
-class meetup
+class mo_meetup
 {
     public $color="#EC1C40";
 }

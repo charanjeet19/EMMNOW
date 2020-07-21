@@ -1,7 +1,7 @@
 <?php
 
 
-class linkedin
+class mo_linkedin
 {
     public $color="#007AB9";
     public $scope="r_liteprofile r_emailaddress w_member_social";

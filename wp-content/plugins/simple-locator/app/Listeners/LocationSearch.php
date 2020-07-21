@@ -146,7 +146,7 @@ class LocationSearch
 	public function paginationFields()
 	{
 		$out = '
-			<input type="hidden" name="nonce" value="' . $_POST['nonce'] . '">
+			<input type="hidden" name="nonce" value="' . sanitize_text_field($_POST['nonce']) . '">
 			<input type="hidden" name="address" value="' . $this->data['address'] . '">
 			<input type="hidden" name="geolocation" value="' . $this->data['geolocation'] . '">
 			<input type="hidden" name="limit" value="' . $this->data['limit'] . '" />
@@ -168,7 +168,7 @@ class LocationSearch
 		$out .= $this->paginationFields();
 		$out .= '
 			<input type="hidden" name="page" value="' . $this->data['page'] . '" />
-			<input type="submit" value="' . __('Next', 'wpsimplelocator') . '" class="button" />
+			<input type="submit" value="' . __('Next', 'simple-locator') . '" class="button" />
 			</form>
 		';
 		return $out;
@@ -184,7 +184,7 @@ class LocationSearch
 		$page = $this->data['page'] - 2;
 		$out .= '
 			<input type="hidden" name="page" value="' . $page . '" />
-			<input type="submit" value="' . __('Previous', 'wpsimplelocator') . '" class="button" />
+			<input type="submit" value="' . __('Previous', 'simple-locator') . '" class="button" />
 			</form>
 		';
 		return $out;

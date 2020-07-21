@@ -27,7 +27,7 @@ $output .= '
 		<input type="text" name="address" class="address wpsl-search-form" placeholder="' . $this->options['placeholder'] . '" value="' . $search_term . '" />
 	</div>
 	<div class="distance form-field">
-		<label for="distance">' . __('Distance', 'wpsimplelocator'). '</label>
+		<label for="distance">' . __('Distance', 'simple-locator'). '</label>
 		<select name="distance" class="distanceselect">' .
 			$this->distanceOptions() . 
 		'</select>
@@ -49,7 +49,7 @@ if ( $search && !$search->data('errors') ) :
 	if ( $results ) :
 
 		$output .= '<h3>' . $search->resultCount() . ' Results within ' . $search->data('distance') . ' ' . $search->data('unit') . ' of ' . $search->data('formatted_address') . '</h3>';
-		$output .= '<h5>' . __('Page', 'wpsimplelocator') . ' ' . $page . ' of ' . $search->data('max_num_pages') . '</h5>';
+		$output .= '<h5>' . __('Page', 'simple-locator') . ' ' . $page . ' of ' . $search->data('max_num_pages') . '</h5>';
 
 		if ( $this->options['mapcontainer'] === '.wpsl-map' ){
 			$output .= ( isset($mapheight) && $mapheight !== "" ) 

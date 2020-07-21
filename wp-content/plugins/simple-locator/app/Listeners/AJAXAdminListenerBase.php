@@ -24,7 +24,7 @@ abstract class AJAXAdminListenerBase
 	protected function validateNonce()
 	{
 		try {
-			$this->nonce_validator->validate($_POST['nonce'], 'wpsl_locator-locator-nonce');
+			$this->nonce_validator->validate(sanitize_text_field($_POST['nonce']), 'wpsl_locator-locator-nonce');
 		} catch ( \Exception $e ){
 			return $this->error($e->getMessage());
 		}			

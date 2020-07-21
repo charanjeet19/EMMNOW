@@ -151,7 +151,7 @@ function mo_openid_customise_social_icons(){
                                 $app_img='kaka';
                             if($active_app=='facebook')
                             {
-                                $class_app++;
+                                $count_app++;
                                 ?>
                                 <img class="mo_login_icon_preview" id="mo_login_icon_preview_facebook" src="<?php echo plugin_url.'/facebook.png'?>" />
                                 <a id="mo_login_button_preview_facebook" class="btn btn-block btn-defaulttheme btn-social btn-facebook btn-custom-size"> <i class="mofa" style="border-right:none;"><svg xmlns="http://www.w3.org/2000/svg" style="margin-top:12%;margin-left: 2%;" ><path fill="#fff" d="M22.688 0H1.323C.589 0 0 .589 0 1.322v21.356C0 23.41.59 24 1.323 24h11.505v-9.289H9.693V11.09h3.124V8.422c0-3.1 1.89-4.789 4.658-4.789 1.322 0 2.467.1 2.8.145v3.244h-1.922c-1.5 0-1.801.711-1.801 1.767V11.1h3.59l-.466 3.622h-3.113V24h6.114c.734 0 1.323-.589 1.323-1.322V1.322A1.302 1.302 0 0 0 22.688 0z"/></svg></i><?php

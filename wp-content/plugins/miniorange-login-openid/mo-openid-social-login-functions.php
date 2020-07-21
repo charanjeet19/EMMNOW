@@ -44,7 +44,8 @@ function mo_openid_custom_app_oauth_redirect($appname){
         $appname='yahoo';
     }
     require('social_apps/' . $appname . '.php');
-    $social_app = new $appname();
+    $mo_appname='mo_'.$appname;
+    $social_app = new $mo_appname();
     $social_app->mo_openid_get_app_code();
 }
 
@@ -91,7 +92,8 @@ function mo_openid_process_custom_app_callback()
          $appname='yahoo';
      }
     require('social_apps/' . $appname . '.php');
-    $social_app = new $appname();
+    $mo_appname='mo_'.$appname;
+    $social_app = new $mo_appname();
     $appuserdetails = $social_app->mo_openid_get_access_token();
     mo_openid_process_user_details($appuserdetails,$appname);
 }

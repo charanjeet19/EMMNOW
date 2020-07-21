@@ -13,7 +13,7 @@ class NonceValidator
 	public function validate($submitted_nonce, $match_nonce)
 	{
 		if ( ! wp_verify_nonce( $submitted_nonce, $match_nonce ) ){
-			throw new \Exception(__('Incorrect Form Field', 'wpsimplelocator'));
+			throw new \Exception(__('Incorrect Form Field', 'simple-locator'));
 		}
 	}
 

@@ -26,6 +26,24 @@ This plugin does NOT come with template files those will need to be created for 
 
 == Changelog ==
 
+= 2.7.6 =
+* Fixed "Type" select list max-height but for CT Listings Search Elementor module
+= 2.7.5 =
+* Changed col width when using Icon Button Style for CT Listings Search Elementor module
+= 2.7.4 =
+* Styling tweaks & New SVG Icon for CT Listings Search Elementor module
+= 2.7.3 =
+* Styling tweaks for CT Listings List Elementor module
+= 2.7.2 =
+* Bug fix for CT Listings Carousel Elementor module loop behavior
+= 2.7.1 =
+* Added "Complex" labels 
+= 2.7.0 =
+* Added "CT Listings Table" module for Elementor
+= 2.6.9 =
+* Added "CT Listings Carousel" module for Elementor
+= 2.6.8 =
+* Added Croatian Translation
 = 2.6.7 =
 * Added "Display Size" option to CT Listings Search Elementor module
 = 2.6.6 =

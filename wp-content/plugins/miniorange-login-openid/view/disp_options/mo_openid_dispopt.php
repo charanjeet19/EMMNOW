@@ -49,42 +49,41 @@ function mo_openid_disp_opt()
                 </label>
             </div>
             <div style="width:50%; background:white; float:right; border: 1px transparent;">
-                <b style="font-size:17px;"><?php echo mo_sl('Woocommerce display options');?> <a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a></b><br><br><br>
+                <b style="font-size:17px;"><?php echo mo_sl('Woocommerce display options');?></b><br><br><br>
 
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('Before WooCommerce Login Form');?>
-                    <input type="checkbox"  /><br>
-                    <span class="mo_openid_checkbox_checkmark_disable"></span>
+                <label class="mo_openid_checkbox_container">
+                    <input type="checkbox" id="woocommerce_before_login_form" name="mo_openid_woocommerce_before_login_form" value="1" <?php checked( get_option('mo_openid_woocommerce_before_login_form') == 1 );?> /><?php echo mo_sl("Before WooCommerce Login Form");?>
+                    <span class="mo_openid_checkbox_checkmark"></span>
                 </label>
-
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl("Before 'Remember Me' of WooCommerce Login Form");?>
-                    <input type="checkbox"  /><br>
-                    <span class="mo_openid_checkbox_checkmark_disable"></span>
+                <label class="mo_openid_checkbox_container">
+                    <input type="checkbox" id="woocommerce_center_login_form" name="mo_openid_woocommerce_center_login_form" value="1" <?php checked( get_option('mo_openid_woocommerce_center_login_form') == 1 );?> /><?php echo mo_sl("Before 'Remember Me' of WooCommerce Login Form");?>
+                    <span class="mo_openid_checkbox_checkmark"></span>
                 </label>
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Login Form');?>
-                    <input type="checkbox"  /><br>
-                    <span class="mo_openid_checkbox_checkmark_disable"></span>
-                </label>
-
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('Before WooCommerce Registration Form');?>
-                    <input type="checkbox"  /><br>
-                    <span class="mo_openid_checkbox_checkmark_disable"></span>
-                </label>
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl("Before 'Register button' of WooCommerce Registration Form");?>
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Login Form');?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
                     <input type="checkbox"  /><br>
                     <span class="mo_openid_checkbox_checkmark_disable"></span>
                 </label>
 
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Registration Form');?>
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('Before WooCommerce Registration Form');?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
+                    <input type="checkbox"  /><br>
+                    <span class="mo_openid_checkbox_checkmark_disable"></span>
+                </label>
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl("Before 'Register button' of WooCommerce Registration Form");?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
                     <input type="checkbox"  /><br>
                     <span class="mo_openid_checkbox_checkmark_disable"></span>
                 </label>
 
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('Before WooCommerce Checkout Form');?>
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Registration Form');?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
                     <input type="checkbox"  /><br>
                     <span class="mo_openid_checkbox_checkmark_disable"></span>
                 </label>
 
-                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Checkout Form');?>
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('Before WooCommerce Checkout Form');?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
+                    <input type="checkbox"  /><br>
+                    <span class="mo_openid_checkbox_checkmark_disable"></span>
+                </label>
+
+                <label class="mo_openid_checkbox_container_disable"><?php echo mo_sl('After WooCommerce Checkout Form');?><a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
                     <input type="checkbox"  /><br>
                     <span class="mo_openid_checkbox_checkmark_disable"></span>
                 </label>

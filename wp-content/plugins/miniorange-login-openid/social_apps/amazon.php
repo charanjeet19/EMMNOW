@@ -1,7 +1,7 @@
 <?php
 
 
-class amazon
+class mo_amazon
 {
     public $color="#343331";
     public $scope="profile";

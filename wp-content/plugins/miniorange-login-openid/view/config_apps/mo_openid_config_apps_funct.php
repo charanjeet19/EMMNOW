@@ -71,7 +71,8 @@ function mo_openid_app_instructions_action()
         $name=plugin_dir_path(dirname(__DIR__));
         $name=substr($name,0,strlen($name)-1).'//social_apps//'.$social_app.'.php';
         require($name);
-        $social_app = new $social_app();
+        $mo_appname='mo_'.$social_app;
+        $social_app = new $mo_appname();
         if(!isset($appslist[sanitize_text_field($_POST['app_name'])]['scope']))
             $instructions .= $social_app->scope . "##";
         else

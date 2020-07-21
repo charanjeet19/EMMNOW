@@ -42,7 +42,7 @@ class GetMetaFieldsForPostType
 	*/
 	private function setData()
 	{
-		$show_hidden = ( $_GET['show_hidden'] == 'true' ) ? true : false;
+		$show_hidden = ( sanitize_text_field($_GET['show_hidden']) == 'true' ) ? true : false;
 		$this->data = array(
 			'nonce' => sanitize_text_field($_GET['nonce']),
 			'post_type' => sanitize_text_field($_GET['post_type']),

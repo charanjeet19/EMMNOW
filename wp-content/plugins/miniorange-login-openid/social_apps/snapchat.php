@@ -1,7 +1,7 @@
 <?php
 
 
-class snapchat
+class mo_snapchat
 {
     public $color="#FFFB00";
 }

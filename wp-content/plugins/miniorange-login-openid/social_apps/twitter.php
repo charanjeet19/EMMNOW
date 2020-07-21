@@ -1,7 +1,7 @@
 <?php
 
 
-class twitter
+class mo_twitter
 {
     public $color="#00ACED";
     public $scope="";

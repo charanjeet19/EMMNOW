@@ -300,15 +300,66 @@ class wpdevReallySimpleCaptcha {
 			return true;
 		}
 
+		// FixIn: 8.7.7.5
 		if ( $handle = @fopen( $htaccess_file, 'w' ) ) {
-			fwrite( $handle, 'Order deny,allow' . "\n" );
-			fwrite( $handle, 'Deny from all' . "\n" );
-			fwrite( $handle, '<Files ~ "^[0-9A-Za-z]+\\.(jpeg|gif|png)$">' . "\n" );
+
+			fwrite( $handle, '# apache 2.2' . "\n" );
+			fwrite( $handle, '<IfModule !mod_authz_core.c>' . "\n" );
+			fwrite( $handle, '  Order deny,allow' . "\n" );
+			fwrite( $handle, '  Deny from all' . "\n" );
+			fwrite( $handle, '  <Files ~ "^[0-9A-Za-z]+\.(jpeg|gif|png)$">' . "\n" );
 			fwrite( $handle, '    Allow from all' . "\n" );
-			fwrite( $handle, '</Files>' . "\n" );
+			fwrite( $handle, '  </Files>' . "\n" );
+			fwrite( $handle, '</IfModule>' . "\n" );
+
+			fwrite( $handle, '# apache 2.4' . "\n" );
+			fwrite( $handle, '<IfModule mod_authz_core.c>' . "\n" );
+			fwrite( $handle, '  Require all denied' . "\n" );
+			fwrite( $handle, '  <Files ~ "^[0-9A-Za-z]+\.(jpeg|gif|png)$">' . "\n" );
+			fwrite( $handle, '    Require all granted' . "\n" );
+			fwrite( $handle, '  </Files>' . "\n" );
+			fwrite( $handle, '</IfModule>' . "\n" );
+
 			fclose( $handle );
 		}
 
+		/*
+		// Check  Apache version
+		$apache_ver = '0';
+		if ( ( isset( $_SERVER['SERVER_SOFTWARE'] ) ) && ( false !== strpos( $_SERVER['SERVER_SOFTWARE'], 'Apache/2.4' ) ) ) {
+
+			$apache_ver = explode( "Apache", $_SERVER['SERVER_SOFTWARE'] );     // Apache/1.3.29 (Unix) PHP
+			if ( isset( $apache_ver[1] ) ) {
+				$apache_ver = trim( $apache_ver[1], '/ ' );
+				$apache_ver = explode( " ", $apache_ver );
+				$apache_ver = trim( $apache_ver[0] );
+			} else {
+				$apache_ver = '0';
+			}
+		}
+		if ( version_compare( $apache_ver, '2.4', '>=' ) ) {
+			// Apache 2.4 or newer
+
+			if ( $handle = @fopen( $htaccess_file, 'w' ) ) {
+				fwrite( $handle, 'Require all denied' . "\n" );
+				fwrite( $handle, '<Files ~ "^[0-9A-Za-z]+\\.(jpeg|gif|png)$">' . "\n" );
+				fwrite( $handle, '    Require all granted' . "\n" );
+				fwrite( $handle, '</Files>' . "\n" );
+				fclose( $handle );
+			}
+		 } else {
+
+			// Apache 2.2 or lower
+			if ( $handle = @fopen( $htaccess_file, 'w' ) ) {
+				fwrite( $handle, 'Order deny,allow' . "\n" );
+				fwrite( $handle, 'Deny from all' . "\n" );
+				fwrite( $handle, '<Files ~ "^[0-9A-Za-z]+\\.(jpeg|gif|png)$">' . "\n" );
+				fwrite( $handle, '    Allow from all' . "\n" );
+				fwrite( $handle, '</Files>' . "\n" );
+				fclose( $handle );
+			}
+		}
+		*/
 		return true;
 	}
 

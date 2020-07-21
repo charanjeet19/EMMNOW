@@ -228,9 +228,9 @@ function wpbc_api_is_dates_booked( $booking_dates, $resource_id = 1, $params = a
 	$sql .= "   ORDER BY bk.booking_id DESC, dt.booking_date ASC ";
 
 	$exist_dates_results = $wpdb->get_results( $sql );
-	
+
 	$is_date_time_booked = wpbc_check_dates_intersections( $booking_dates, $exist_dates_results );
-	
+//debuge((int)$is_date_time_booked, $booking_dates)	;
 	return $is_date_time_booked;
 }
 
@@ -431,6 +431,29 @@ function wpbc_api_get_booking_by_id( $booking_id = '' ) {
 	return $data;
 }
 
+//FixIn: 8.7.7.3
+/**
+ * Get booking form  fields in Booking Calendar Free version
+ * @return array
+ */
+function wpbc_get_form_fields_free() {
+	$obj = array();
+	if ( class_exists( 'WPBC_Page_SettingsFormFieldsFree' ) ) {
+		$form_fields = WPBC_Page_SettingsFormFieldsFree::get_booking_form_structure_for_visual();
+		foreach ( $form_fields as $field ) {
+			if (    ( $field['name'] != '' )
+			     && ( $field['label'] != '' )
+		         && ( ! in_array( $field['type'], array(
+														'captcha',
+														'submit'
+													) ) )
+	        ) {
+				$obj[ $field['name'] ] = $field['label'];
+			}
+		}
+	}
+	return $obj;
+}
 
 /**
  * Hook action after creation  new booking

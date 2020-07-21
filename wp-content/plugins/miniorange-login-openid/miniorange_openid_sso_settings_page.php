@@ -34,10 +34,15 @@ require('view/soc_com/com_Enable/mo_openid_comm_enable.php');
 require('view/soc_com/com_shrtco/comm_shrtco.php');
 include('view/add_on/custom_registration_form.php');
 include('view/mo_new/mo_openid_whats_new.php');
+require('view/soc_sha/soc_med_cust/mo_openid_social_media_cust.php');
+require ('view/soc_sha/twitter_btn/mo_twitter_btn.php');
+require('view/soc_sha/soc_med_ser/mo_openid_social_media_services.php');
 
 function mo_register_openid() {
 ?>
     <div id="upgrade_notice" class="update-nag" style="width: 92.5%;margin-left: 0%;"><strong>Special WOOCOMMERCE, BUDDYPRESS & MAILCHIMP INTEGRATION PLUGINS. Click here to <a id="pricing" style="background: #FFA335;border-color: #FFA335;color: white;" class="button" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('Upgrade Now');?></a>
+        </strong></div>
+    <div id="upgrade_notice" class="update-nag" style="width: 92.5%;margin-left: 0%;"><strong>New SOCIAL SHARING PLUGIN is available with attractive features. Click here to <a id="pricing" style="background: #FFA335;border-color: #FFA335;color: white;" class="button" href="<?php echo site_url().'/wp-admin/admin.php?page=mo_openid_social_sharing_settings&tab=licensing_plans'; ?>"><?php echo mo_sl('Upgrade Now');?></a>
         </strong></div>
 <?php
     
@@ -531,6 +536,16 @@ function mo_register_sharing_openid()
                 <a id="short_code" class="tablinks<?php if ($active_tab == "short_code") echo '_active'; ?>"
                    href="<?php echo add_query_arg(array('tab' => 'short_code'), $_SERVER['REQUEST_URI']); ?>"><?php echo mo_sl('Shortcodes');?></a>
 
+                <a id="social_media_services" class="tablinks<?php if ($active_tab == "social_media_services") echo '_active'; ?>"
+                   href="<?php echo add_query_arg(array('tab' => 'social_media_services'), $_SERVER['REQUEST_URI']); ?>"><?php echo mo_sl('Social Media Services');?><span style="margin-left: 1%" class="mo-openid-premium"><?php echo mo_sl('PRO');?></span></a>
+
+                <a id="social_icons_customization" class="tablinks<?php if ($active_tab == "social_icons_customization") echo '_active'; ?>"
+                   href="<?php echo add_query_arg(array('tab' => 'social_icons_customization'), $_SERVER['REQUEST_URI']); ?>"><?php echo mo_sl('Social Icons Customization');?><span style="margin-left: 2%" class="mo-openid-premium"><?php echo mo_sl('PRO');?></span></a>
+
+                <a id="mo_twitter_btn" class="tablinks<?php if ($active_tab == "mo_twitter_btn") echo '_active'; ?>"
+                   href="<?php echo add_query_arg(array('tab' => 'mo_twitter_btn'), $_SERVER['REQUEST_URI']); ?>"><?php echo mo_sl('Twitter Follow Button');?><span style="margin-left: 1%" class="mo-openid-premium"><?php echo mo_sl('PRO');?></span></a>
+
+
             </div>
         </div>
 
@@ -560,7 +575,7 @@ function mo_register_sharing_openid()
                                         mo_openid_short_code();
                                         break;
                                     case 'licensing_plans':
-                                        mo_openid_licensing_plans();
+                                        mo_openid_licensing_plan_sharing();
                                         break;
                                     case 'faq':
                                         mo_openid_faq();
@@ -571,6 +586,17 @@ function mo_register_sharing_openid()
                                     case 'add_on':
                                         header('Location: '.site_url().'/wp-admin/admin.php?page=mo_openid_settings_addOn');
                                         break;
+                                    case 'social_media_services':
+                                        mo_openid_social_media_services();
+                                        break;
+                                    case 'social_icons_customization':
+                                        mo_openid_social_icons_customization();
+                                        break;
+                                    case 'mo_twitter_btn':
+                                        mo_twitter_btn();
+                                        break;
+
+
                                 }
                                 ?>
                             </td>

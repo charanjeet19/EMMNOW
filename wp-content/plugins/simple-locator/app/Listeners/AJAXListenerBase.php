@@ -27,7 +27,7 @@ abstract class AJAXListenerBase
 	protected function validateNonce()
 	{
 		try {
-			$this->nonce_validator->validate($_POST['locatorNonce'], 'locatornonce');
+			$this->nonce_validator->validate(sanitize_text_field($_POST['locatorNonce']), 'locatornonce');
 		} catch ( \Exception $e ){
 			return $this->error($e->getMessage());
 		}			

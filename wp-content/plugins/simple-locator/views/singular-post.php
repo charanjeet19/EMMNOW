@@ -26,7 +26,7 @@ if ( ($this->settings_repo->getLocationPostType() == 'location') && ($this->loca
 	if ( (isset($this->location_data['website'])) && ($this->location_data['website'] !== "") ){
 		$url = \SimpleLocator\Helpers::checkURL($this->location_data['website']);
 		$out .= '<div class="wpsl-location-website"><p>';
-		$out .= __('Website', 'wpsimplelocator') . ':';
+		$out .= __('Website', 'simple-locator') . ':';
 		$out .= ' <a href="' . $url . '" target="_blank">' . $this->location_data['website'] . '</a>';
 		$out .= '</p></div>';
 	}
@@ -34,7 +34,7 @@ if ( ($this->settings_repo->getLocationPostType() == 'location') && ($this->loca
 	// Phone
 	if ( isset($this->location_data['phone']) && $this->location_data['phone'] !== "" ){
 		$out .= '<div class="wpsl-location-phone"><p>';
-		$out .= __('Phone', 'wpsimplelocator') . ': ' . $this->location_data['phone'];
+		$out .= __('Phone', 'simple-locator') . ': ' . $this->location_data['phone'];
 		$out .= '</p></div>';
 	}
 

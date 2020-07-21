@@ -1503,11 +1503,12 @@ function bk_form_step_click( el ){
  */
 function wpbc_wizard_step( el, step_num ){
     var br_id = jQuery( el ).closest( 'form' ).find( 'input[name^="bk_type"]' ).val();
-    var is_error = wpbc_check_errors_in_booking_form( br_id );
-    if ( is_error ){
-        return false;
+    if ( 1 != step_num ){                                                                       //FixIn: 8.7.7.8
+        var is_error = wpbc_check_errors_in_booking_form( br_id );
+        if ( is_error ){
+            return false;
+        }
     }
-
     if ( wpbc_is_some_elements_visible( br_id, ['rangetime', 'durationtime', 'starttime', 'endtime'] ) ){
         if ( is_this_time_selections_not_available( br_id, document.getElementById( 'booking_form' + br_id ) ) ){
             return false;

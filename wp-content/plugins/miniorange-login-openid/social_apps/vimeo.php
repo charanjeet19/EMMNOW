@@ -1,7 +1,7 @@
 <?php
 
 
-class vimeo
+class mo_vimeo
 {
     public $color="#1FB7EB";
 }

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: booking\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-10 10:15+0200\n"
+"POT-Creation-Date: 2020-07-02 08:54+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: wpdevelop <info@wpdevelop.com>\n"
 "Language-Team: wpdevelop <info@wpbookingcalendar.com>\n"
@@ -247,7 +247,7 @@ msgstr ""
 #: core/admin/wpbc-toolbars.php:549 core/admin/wpbc-toolbars.php:964
 #: core/lib/wpbc_all_translations.php:46 core/timeline/v2/wpbc-class-timeline_v2.php:2676
 #: core/timeline/v2/wpbc-class-timeline_v2.php:2729 core/wpbc-activation.php:1034
-#: inc/_bs/lib_s.php:327 inc/_ps/personal.php:359 inc/_ps/wpbc-print.php:119
+#: inc/_bs/lib_s.php:328 inc/_ps/personal.php:359 inc/_ps/wpbc-print.php:119
 msgid "Pending"
 msgstr ""
 
@@ -768,7 +768,7 @@ msgstr ""
 #: core/admin/api-settings.php:1354 core/lib/wpbc_all_translations.php:148
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:564
 #: inc/gateways/ipay88/wpbc-gw-ipay88.php:482 inc/gateways/page-gateways.php:917
-#: inc/gateways/paypal/wpbc-gw-paypal.php:640 inc/gateways/sage/wpbc-gw-sage.php:591
+#: inc/gateways/paypal/wpbc-gw-paypal.php:661 inc/gateways/sage/wpbc-gw-sage.php:591
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:857
 msgid "Warning"
 msgstr ""
@@ -811,9 +811,9 @@ msgstr ""
 #: inc/_ps/admin/page-email-edit.php:178 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:297
 #: inc/gateways/bank_transfer/wpbc-gw-bank_transfer.php:218
 #: inc/gateways/ideal/wpbc-gw-ideal.php:377 inc/gateways/ipay88/wpbc-gw-ipay88.php:317
-#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:146 inc/gateways/paypal/wpbc-gw-paypal.php:343
-#: inc/gateways/paypal/wpbc-gw-paypal.php:681 inc/gateways/paypal/wpbc-gw-paypal.php:704
-#: inc/gateways/paypal/wpbc-gw-paypal.php:727 inc/gateways/sage/wpbc-gw-sage.php:384
+#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:146 inc/gateways/paypal/wpbc-gw-paypal.php:364
+#: inc/gateways/paypal/wpbc-gw-paypal.php:720 inc/gateways/paypal/wpbc-gw-paypal.php:743
+#: inc/gateways/paypal/wpbc-gw-paypal.php:766 inc/gateways/sage/wpbc-gw-sage.php:384
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:485
 msgid "Enable / Disable"
 msgstr ""
@@ -859,8 +859,8 @@ msgstr ""
 #: core/admin/page-email-trash.php:277 core/lib/wpbc_all_translations.php:159
 #: inc/_bs/admin/page-email-payment.php:216 inc/_bs/admin/page-email-payment.php:273
 #: inc/_ps/admin/page-email-edit.php:215 inc/_ps/admin/page-email-edit.php:272
-#: inc/gateways/paypal/wpbc-gw-paypal.php:691 inc/gateways/paypal/wpbc-gw-paypal.php:714
-#: inc/gateways/paypal/wpbc-gw-paypal.php:737
+#: inc/gateways/paypal/wpbc-gw-paypal.php:730 inc/gateways/paypal/wpbc-gw-paypal.php:753
+#: inc/gateways/paypal/wpbc-gw-paypal.php:776
 msgid "Email Address"
 msgstr ""
 
@@ -880,8 +880,8 @@ msgstr ""
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:309
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:343 inc/gateways/ideal/wpbc-gw-ideal.php:389
 #: inc/gateways/ideal/wpbc-gw-ideal.php:404 inc/gateways/ipay88/wpbc-gw-ipay88.php:329
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:344 inc/gateways/paypal/wpbc-gw-paypal.php:376
-#: inc/gateways/paypal/wpbc-gw-paypal.php:392 inc/gateways/sage/wpbc-gw-sage.php:396
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:344 inc/gateways/paypal/wpbc-gw-paypal.php:397
+#: inc/gateways/paypal/wpbc-gw-paypal.php:413 inc/gateways/sage/wpbc-gw-sage.php:396
 #: inc/gateways/sage/wpbc-gw-sage.php:411 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:513
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:528
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:545
@@ -1186,7 +1186,7 @@ msgstr ""
 #: core/admin/page-email-deny.php:452 core/admin/page-email-new-admin.php:431
 #: core/admin/page-email-new-visitor.php:437 core/admin/page-email-trash.php:457
 #: core/lib/wpbc_all_translations.php:194 inc/_bs/admin/page-email-payment.php:455
-#: inc/_ps/admin/page-email-edit.php:451 inc/_ps/admin/page-settings-form.php:678
+#: inc/_ps/admin/page-email-edit.php:451 inc/_ps/admin/page-settings-form.php:689
 #: inc/_ps/form/class-wpbc-form-help.php:92 inc/gateways/page-gateways.php:1123
 msgid "HTML"
 msgstr ""
@@ -1306,7 +1306,7 @@ msgstr ""
 #: inc/gateways/bank_transfer/wpbc-gw-bank_transfer.php:489
 #: inc/gateways/ideal/wpbc-gw-ideal.php:923 inc/gateways/ipay88/wpbc-gw-ipay88.php:864
 #: inc/gateways/page-gateways.php:686 inc/gateways/pay_cash/wpbc-gw-pay_cash.php:402
-#: inc/gateways/paypal/wpbc-gw-paypal.php:1085 inc/gateways/sage/wpbc-gw-sage.php:913
+#: inc/gateways/paypal/wpbc-gw-paypal.php:1124 inc/gateways/sage/wpbc-gw-sage.php:913
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:1150
 msgid "Save Changes"
 msgstr ""
@@ -1331,8 +1331,8 @@ msgstr ""
 #: inc/_bs/admin/page-email-payment.php:755 inc/_ps/admin/page-email-edit.php:751
 #: inc/_ps/admin/page-settings-form.php:181
 #: inc/gateways/bank_transfer/wpbc-gw-bank_transfer.php:452 inc/gateways/page-gateways.php:675
-#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:393 inc/gateways/paypal/wpbc-gw-paypal.php:1059
-#: inc/gateways/paypal/wpbc-gw-paypal.php:1076
+#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:393 inc/gateways/paypal/wpbc-gw-paypal.php:1098
+#: inc/gateways/paypal/wpbc-gw-paypal.php:1115
 msgid "Help"
 msgstr ""
 
@@ -1359,7 +1359,7 @@ msgstr ""
 #: inc/_ps/admin/page-email-edit.php:850 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:951
 #: inc/gateways/bank_transfer/wpbc-gw-bank_transfer.php:562
 #: inc/gateways/ideal/wpbc-gw-ideal.php:944 inc/gateways/ipay88/wpbc-gw-ipay88.php:885
-#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:423 inc/gateways/paypal/wpbc-gw-paypal.php:1106
+#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:423 inc/gateways/paypal/wpbc-gw-paypal.php:1145
 #: inc/gateways/sage/wpbc-gw-sage.php:934 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:1169
 msgid "Settings saved."
 msgstr ""
@@ -1605,8 +1605,8 @@ msgstr ""
 #: core/admin/page-form-free.php:1992 core/admin/page-form-timeslots.php:106
 #: core/admin/page-form-timeslots.php:201 core/admin/page-form-timeslots.php:766
 #: core/admin/page-form-timeslots.php:816 core/lib/wpbc_all_translations.php:254
-#: inc/_ps/admin/page-settings-form.php:373 inc/_ps/admin/page-settings-form.php:383
-#: inc/_ps/admin/page-settings-form.php:393
+#: inc/_ps/admin/page-settings-form.php:384 inc/_ps/admin/page-settings-form.php:394
+#: inc/_ps/admin/page-settings-form.php:404
 msgid "Time Slots"
 msgstr ""
 
@@ -1795,8 +1795,8 @@ msgstr ""
 #: core/sync/wpbc-gcal.php:206 core/sync/wpbc-gcal.php:270 inc/_bm/admin/api-settings-m.php:67
 #: inc/_bm/admin/api-settings-m.php:96 inc/_bm/admin/api-settings-m.php:100
 #: inc/_bs/admin/api-settings-s.php:525 inc/_bs/admin/api-settings-s.php:526
-#: inc/_bs/admin/api-settings-s.php:527 inc/_ps/admin/page-settings-form.php:383
-#: inc/_ps/admin/page-settings-form.php:393
+#: inc/_bs/admin/api-settings-s.php:527 inc/_ps/admin/page-settings-form.php:394
+#: inc/_ps/admin/page-settings-form.php:404
 msgid "minutes"
 msgstr ""
 
@@ -2012,7 +2012,7 @@ msgstr ""
 #: inc/_bl/admin/page-search.php:780 inc/_bl/wpbc-search-availability.php:167
 #: inc/_bl/wpbc-search-availability.php:659 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:921
 #: inc/gateways/ideal/wpbc-gw-ideal.php:914 inc/gateways/ipay88/wpbc-gw-ipay88.php:855
-#: inc/gateways/paypal/wpbc-gw-paypal.php:1052 inc/gateways/sage/wpbc-gw-sage.php:904
+#: inc/gateways/paypal/wpbc-gw-paypal.php:1091 inc/gateways/sage/wpbc-gw-sage.php:904
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:1141
 msgid "Advanced"
 msgstr ""
@@ -2167,7 +2167,7 @@ msgstr ""
 #: inc/_bm/admin/page-cost-early-late-booking.php:430 inc/_bm/admin/page-cost-valuation.php:190
 #: inc/_bm/admin/page-cost-valuation.php:348 inc/_bm/admin/page-cost-valuation.php:481
 #: inc/_bm/admin/page-seasons.php:1051 inc/_bs/admin/api-settings-s.php:536
-#: inc/_ps/admin/page-settings-form.php:447 inc/_ps/wpbc-form-templates.php:231
+#: inc/_ps/admin/page-settings-form.php:458 inc/_ps/wpbc-form-templates.php:231
 #: inc/_ps/wpbc-form-templates.php:266
 msgid "days"
 msgstr ""
@@ -2193,7 +2193,7 @@ msgstr ""
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:407
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:438 inc/gateways/ideal/wpbc-gw-ideal.php:422
 #: inc/gateways/ideal/wpbc-gw-ideal.php:477 inc/gateways/ideal/wpbc-gw-ideal.php:481
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:399 inc/gateways/paypal/wpbc-gw-paypal.php:529
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:399 inc/gateways/paypal/wpbc-gw-paypal.php:550
 #: inc/gateways/sage/wpbc-gw-sage.php:508 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:564
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:729
 msgid "Note:"
@@ -2486,7 +2486,7 @@ msgid "Resource not exist"
 msgstr ""
 
 #: core/admin/wpbc-class-listing.php:252 core/lib/wpbc_all_translations.php:416
-#: inc/_bs/lib_s.php:295 inc/_bs/lib_s.php:310
+#: inc/_bs/lib_s.php:296 inc/_bs/lib_s.php:311
 msgid "Unknown"
 msgstr ""
 
@@ -2528,7 +2528,7 @@ msgid "Do you really want to set booking as pending ?"
 msgstr ""
 
 #: core/admin/wpbc-class-listing.php:435 core/lib/wpbc_all_translations.php:425
-#: inc/_bs/lib_s.php:338
+#: inc/_bs/lib_s.php:339
 msgid "Created"
 msgstr ""
 
@@ -3098,7 +3098,7 @@ msgstr ""
 msgid "Booking ID"
 msgstr ""
 
-#: core/admin/wpbc-toolbars.php:408 core/admin/wpbc-toolbars.php:2249
+#: core/admin/wpbc-toolbars.php:408 core/admin/wpbc-toolbars.php:2247
 #: core/lib/wpbc_all_translations.php:538
 msgid "Go"
 msgstr ""
@@ -3402,12 +3402,12 @@ msgstr ""
 msgid "Add to Google Calendar"
 msgstr ""
 
-#: core/admin/wpbc-toolbars.php:2109 core/lib/wpbc_all_translations.php:604
+#: core/admin/wpbc-toolbars.php:2107 core/lib/wpbc_all_translations.php:604
 #: inc/gateways/page-gateways.php:1419 inc/gateways/page-gateways.php:1437
 msgid "Total"
 msgstr ""
 
-#: core/admin/wpbc-toolbars.php:2245 core/lib/wpbc_all_translations.php:605
+#: core/admin/wpbc-toolbars.php:2243 core/lib/wpbc_all_translations.php:605
 msgid "ID or Title"
 msgstr ""
 
@@ -3592,8 +3592,8 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations.php:645 core/timeline/v2/wpbc-class-timeline_v2.php:2758
 #: core/timeline/v2/wpbc-class-timeline_v2.php:2760 core/wpbc-functions.php:1999
-#: inc/_bs/lib_s.php:43 inc/_bs/lib_s.php:272 inc/_bs/lib_s.php:274
-#: inc/_ps/admin/page-settings-form.php:352 inc/_ps/admin/page-settings-form.php:363
+#: inc/_bs/lib_s.php:43 inc/_bs/lib_s.php:273 inc/_bs/lib_s.php:275
+#: inc/_ps/admin/page-settings-form.php:363 inc/_ps/admin/page-settings-form.php:374
 msgid "Payment"
 msgstr ""
 
@@ -3623,7 +3623,7 @@ msgstr ""
 msgid "Number of months"
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:652 inc/_bs/lib_s.php:47 inc/_bs/lib_s.php:292
+#: core/lib/wpbc_all_translations.php:652 inc/_bs/lib_s.php:47 inc/_bs/lib_s.php:293
 msgid "Paid OK"
 msgstr ""
 
@@ -3709,7 +3709,7 @@ msgstr ""
 #: inc/_bl/admin/page-coupons.php:1005 inc/_bm/admin/page-availability.php:814
 #: inc/_bm/admin/page-cost-deposit.php:81 inc/_bm/admin/page-cost-early-late-booking.php:82
 #: inc/_bm/admin/page-cost-rate.php:77 inc/_bm/admin/page-cost-valuation.php:103
-#: inc/_bm/admin/page-seasons.php:826 inc/_bm/admin/page-seasons.php:828 inc/_bs/lib_s.php:345
+#: inc/_bm/admin/page-seasons.php:826 inc/_bm/admin/page-seasons.php:828 inc/_bs/lib_s.php:346
 #: inc/_ps/hash/wpbc-hash-functions.php:67 inc/_ps/hash/wpbc-hash-functions.php:106
 #: inc/_ps/hash/wpbc-hash-functions.php:134 inc/_ps/hash/wpbc-hash-functions.php:162
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:308
@@ -4061,21 +4061,21 @@ msgstr ""
 msgid "%s - add the reason booking was cancelled, you can enter it before sending email, "
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:738 core/wpbc-emails.php:303 core/wpbc-translation.php:273
+#: core/lib/wpbc_all_translations.php:738 core/wpbc-emails.php:303 core/wpbc-translation.php:284
 msgid "Configuration in several languages"
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:739 core/wpbc-emails.php:304 core/wpbc-translation.php:274
+#: core/lib/wpbc_all_translations.php:739 core/wpbc-emails.php:304 core/wpbc-translation.php:285
 #, php-format
 msgid "%s - start new translation section, where %s - locale of translation"
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:740 core/wpbc-emails.php:305 core/wpbc-translation.php:275
+#: core/lib/wpbc_all_translations.php:740 core/wpbc-emails.php:305 core/wpbc-translation.php:286
 #, php-format
 msgid "Example #1: %s - start French translation section"
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:741 core/wpbc-emails.php:306 core/wpbc-translation.php:276
+#: core/lib/wpbc_all_translations.php:741 core/wpbc-emails.php:306 core/wpbc-translation.php:287
 #, php-format
 msgid "Example #2: \"%s\" - English and French translation of some message"
 msgstr ""
@@ -4531,7 +4531,7 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations.php:834 inc/_bl/admin/page-search.php:87
 #: inc/_bl/admin/page-search.php:126 inc/_bm/admin/page-cost-advanced.php:692
-#: inc/_ps/admin/page-settings-form.php:673 inc/gateways/page-gateways.php:1067
+#: inc/_ps/admin/page-settings-form.php:684 inc/gateways/page-gateways.php:1067
 msgid "Use these shortcodes for customization: "
 msgstr ""
 
@@ -4709,12 +4709,12 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations.php:870 inc/_bl/admin/page-search.php:837
 #: inc/_bm/admin/page-seasons.php:1227 inc/_bm/admin/page-seasons.php:1445
-#: inc/_ps/admin/page-settings-form.php:507
+#: inc/_ps/admin/page-settings-form.php:518
 msgid "Reset"
 msgstr ""
 
 #: core/lib/wpbc_all_translations.php:871 inc/_bl/admin/page-search.php:838
-#: inc/_ps/admin/page-settings-form.php:508
+#: inc/_ps/admin/page-settings-form.php:519
 msgid "Reset current Form"
 msgstr ""
 
@@ -4762,7 +4762,7 @@ msgid ""
 "page and try other days."
 msgstr ""
 
-#: core/lib/wpbc_all_translations.php:881 inc/_bl/biz_l.php:2407
+#: core/lib/wpbc_all_translations.php:881 inc/_bl/biz_l.php:2408
 #, php-format
 msgid "The folowing pending booking(s): %s deleted."
 msgstr ""
@@ -5806,12 +5806,12 @@ msgstr ""
 msgid "Unknown Status"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:102 inc/_bs/lib_s.php:49 inc/_bs/lib_s.php:324
+#: core/lib/wpbc_all_translations1.php:102 inc/_bs/lib_s.php:49 inc/_bs/lib_s.php:325
 msgid "Not Completed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:103 inc/_bs/lib_s.php:50 inc/_bs/lib_s.php:313
-#: inc/_bs/lib_s.php:333
+#: core/lib/wpbc_all_translations1.php:103 inc/_bs/lib_s.php:50 inc/_bs/lib_s.php:314
+#: inc/_bs/lib_s.php:334
 msgid "Failed"
 msgstr ""
 
@@ -5823,88 +5823,88 @@ msgstr ""
 msgid "max"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:106 inc/_bs/lib_s.php:268 inc/_bs/lib_s.php:308
-#: inc/_bs/lib_s.php:326
+#: core/lib/wpbc_all_translations1.php:106 inc/_bs/lib_s.php:269 inc/_bs/lib_s.php:309
+#: inc/_bs/lib_s.php:327
 msgid "Completed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:107 inc/_bs/lib_s.php:309 inc/_bs/lib_s.php:329
+#: core/lib/wpbc_all_translations1.php:107 inc/_bs/lib_s.php:310 inc/_bs/lib_s.php:330
 msgid "In-Progress"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:108 inc/_bs/lib_s.php:311 inc/_bs/lib_s.php:346
+#: core/lib/wpbc_all_translations1.php:108 inc/_bs/lib_s.php:312 inc/_bs/lib_s.php:347
 msgid "Partially paid"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:109 inc/_bs/lib_s.php:312 inc/_bs/lib_s.php:347
+#: core/lib/wpbc_all_translations1.php:109 inc/_bs/lib_s.php:313 inc/_bs/lib_s.php:348
 msgid "Cancelled"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:110 inc/_bs/lib_s.php:314 inc/_bs/lib_s.php:335
+#: core/lib/wpbc_all_translations1.php:110 inc/_bs/lib_s.php:315 inc/_bs/lib_s.php:336
 msgid "Refunded"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:111 inc/_bs/lib_s.php:315 inc/_bs/lib_s.php:348
+#: core/lib/wpbc_all_translations1.php:111 inc/_bs/lib_s.php:316 inc/_bs/lib_s.php:349
 msgid "Fraud"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:112 inc/_bs/lib_s.php:322
+#: core/lib/wpbc_all_translations1.php:112 inc/_bs/lib_s.php:323
 msgid "!Paid OK"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:113 inc/_bs/lib_s.php:323
+#: core/lib/wpbc_all_translations1.php:113 inc/_bs/lib_s.php:324
 msgid "Unknown status"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:114 inc/_bs/lib_s.php:328
+#: core/lib/wpbc_all_translations1.php:114 inc/_bs/lib_s.php:329
 msgid "Processed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:115 inc/_bs/lib_s.php:330
+#: core/lib/wpbc_all_translations1.php:115 inc/_bs/lib_s.php:331
 msgid "Canceled_Reversal"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:116 inc/_bs/lib_s.php:331
+#: core/lib/wpbc_all_translations1.php:116 inc/_bs/lib_s.php:332
 msgid "Denied"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:117 inc/_bs/lib_s.php:332
+#: core/lib/wpbc_all_translations1.php:117 inc/_bs/lib_s.php:333
 msgid "Expired"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:118 inc/_bs/lib_s.php:334
+#: core/lib/wpbc_all_translations1.php:118 inc/_bs/lib_s.php:335
 msgid "Partially_Refunded"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:119 inc/_bs/lib_s.php:336
+#: core/lib/wpbc_all_translations1.php:119 inc/_bs/lib_s.php:337
 msgid "Reversed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:120 inc/_bs/lib_s.php:337
+#: core/lib/wpbc_all_translations1.php:120 inc/_bs/lib_s.php:338
 msgid "Voided"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:121 inc/_bs/lib_s.php:340
+#: core/lib/wpbc_all_translations1.php:121 inc/_bs/lib_s.php:341
 msgid "Not authed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:122 inc/_bs/lib_s.php:341
+#: core/lib/wpbc_all_translations1.php:122 inc/_bs/lib_s.php:342
 msgid "Malformed"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:123 inc/_bs/lib_s.php:342
+#: core/lib/wpbc_all_translations1.php:123 inc/_bs/lib_s.php:343
 msgid "Invalid"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:124 inc/_bs/lib_s.php:343
+#: core/lib/wpbc_all_translations1.php:124 inc/_bs/lib_s.php:344
 msgid "Abort"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:125 inc/_bs/lib_s.php:344
+#: core/lib/wpbc_all_translations1.php:125 inc/_bs/lib_s.php:345
 msgid "Rejected"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:126 inc/_bs/lib_s.php:349
+#: core/lib/wpbc_all_translations1.php:126 inc/_bs/lib_s.php:350
 msgid "Suspended"
 msgstr ""
 
@@ -6199,52 +6199,52 @@ msgstr ""
 msgid "Standard Templates"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:191 inc/_ps/admin/page-settings-form.php:338
+#: core/lib/wpbc_all_translations1.php:191 inc/_ps/admin/page-settings-form.php:349
 #: inc/_ps/form/class-wpbc-field-help-textarea.php:111
 msgid "Columns"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:192 inc/_ps/admin/page-settings-form.php:410
+#: core/lib/wpbc_all_translations1.php:192 inc/_ps/admin/page-settings-form.php:421
 msgid "Advanced Templates"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:193 inc/_ps/admin/page-settings-form.php:413
+#: core/lib/wpbc_all_translations1.php:193 inc/_ps/admin/page-settings-form.php:424
 msgid "Wizard (several steps)"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:194 inc/_ps/admin/page-settings-form.php:426
+#: core/lib/wpbc_all_translations1.php:194 inc/_ps/admin/page-settings-form.php:437
 msgid "Time slots for different weekdays"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:195 inc/_ps/admin/page-settings-form.php:436
-#: inc/_ps/admin/page-settings-form.php:447
+#: core/lib/wpbc_all_translations1.php:195 inc/_ps/admin/page-settings-form.php:447
+#: inc/_ps/admin/page-settings-form.php:458
 msgid "Hints"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:196 inc/_ps/admin/page-settings-form.php:469
+#: core/lib/wpbc_all_translations1.php:196 inc/_ps/admin/page-settings-form.php:480
 msgid "Reset Form"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:197 inc/_ps/admin/page-settings-form.php:522
+#: core/lib/wpbc_all_translations1.php:197 inc/_ps/admin/page-settings-form.php:533
 msgid "Both"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:198 inc/_ps/admin/page-settings-form.php:523
+#: core/lib/wpbc_all_translations1.php:198 inc/_ps/admin/page-settings-form.php:534
 msgid "Reset Booking Form and Content of Booking Fields Form"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:199 inc/_ps/admin/page-settings-form.php:674
+#: core/lib/wpbc_all_translations1.php:199 inc/_ps/admin/page-settings-form.php:685
 #: inc/gateways/page-gateways.php:1069
 #, php-format
 msgid "%s - inserting data from fields of booking form"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:200 inc/_ps/admin/page-settings-form.php:675
+#: core/lib/wpbc_all_translations1.php:200 inc/_ps/admin/page-settings-form.php:686
 #, php-format
 msgid "%s - inserting new line"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:201 inc/_ps/admin/page-settings-form.php:679
+#: core/lib/wpbc_all_translations1.php:201 inc/_ps/admin/page-settings-form.php:690
 #: inc/_ps/form/class-wpbc-form-help.php:93 inc/gateways/page-gateways.php:1124
 #, php-format
 msgid ""
@@ -7333,7 +7333,7 @@ msgstr ""
 #: core/lib/wpbc_all_translations1.php:417 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:298
 #: inc/gateways/bank_transfer/wpbc-gw-bank_transfer.php:219
 #: inc/gateways/ideal/wpbc-gw-ideal.php:378 inc/gateways/ipay88/wpbc-gw-ipay88.php:318
-#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:147 inc/gateways/paypal/wpbc-gw-paypal.php:344
+#: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:147 inc/gateways/paypal/wpbc-gw-paypal.php:365
 #: inc/gateways/sage/wpbc-gw-sage.php:385 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:486
 msgid "Enable this payment gateway"
 msgstr ""
@@ -7360,7 +7360,7 @@ msgid "This parameter have to assigned to you by %s"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:422 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:366
-#: inc/gateways/ideal/wpbc-gw-ideal.php:419 inc/gateways/paypal/wpbc-gw-paypal.php:423
+#: inc/gateways/ideal/wpbc-gw-ideal.php:419 inc/gateways/paypal/wpbc-gw-paypal.php:444
 #: inc/gateways/sage/wpbc-gw-sage.php:424
 msgid "Chose payment mode"
 msgstr ""
@@ -7387,12 +7387,12 @@ msgid "Live Test"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:427 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:377
-#: inc/gateways/paypal/wpbc-gw-paypal.php:429
+#: inc/gateways/paypal/wpbc-gw-paypal.php:450
 msgid "Live"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:428 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:385
-#: inc/gateways/paypal/wpbc-gw-paypal.php:407 inc/gateways/sage/wpbc-gw-sage.php:438
+#: inc/gateways/paypal/wpbc-gw-paypal.php:428 inc/gateways/sage/wpbc-gw-sage.php:438
 msgid "Transaction type"
 msgstr ""
 
@@ -7409,7 +7409,7 @@ msgid "Authorization Only"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:432 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:396
-#: inc/gateways/paypal/wpbc-gw-paypal.php:438 inc/gateways/sage/wpbc-gw-sage.php:453
+#: inc/gateways/paypal/wpbc-gw-paypal.php:459 inc/gateways/sage/wpbc-gw-sage.php:453
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:582
 msgid "U.S. Dollars"
 msgstr ""
@@ -7420,25 +7420,25 @@ msgid "Pounds Sterling"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:434 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:398
-#: inc/gateways/paypal/wpbc-gw-paypal.php:439 inc/gateways/sage/wpbc-gw-sage.php:452
+#: inc/gateways/paypal/wpbc-gw-paypal.php:460 inc/gateways/sage/wpbc-gw-sage.php:452
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:584
 msgid "Euros"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:435 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:399
-#: inc/gateways/paypal/wpbc-gw-paypal.php:443 inc/gateways/sage/wpbc-gw-sage.php:456
+#: inc/gateways/paypal/wpbc-gw-paypal.php:464 inc/gateways/sage/wpbc-gw-sage.php:456
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:585
 msgid "Canadian Dollars"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:436 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:404
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:369 inc/gateways/paypal/wpbc-gw-paypal.php:466
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:369 inc/gateways/paypal/wpbc-gw-paypal.php:487
 #: inc/gateways/sage/wpbc-gw-sage.php:478 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:726
 msgid "Accepted Currency"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:437 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:405
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:370 inc/gateways/paypal/wpbc-gw-paypal.php:467
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:370 inc/gateways/paypal/wpbc-gw-paypal.php:488
 #: inc/gateways/sage/wpbc-gw-sage.php:479 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:727
 msgid "The currency code that gateway will process the payment in."
 msgstr ""
@@ -7455,8 +7455,8 @@ msgstr ""
 #: inc/gateways/ideal/wpbc-gw-ideal.php:457 inc/gateways/ideal/wpbc-gw-ideal.php:458
 #: inc/gateways/ideal/wpbc-gw-ideal.php:1046 inc/gateways/ipay88/wpbc-gw-ipay88.php:379
 #: inc/gateways/ipay88/wpbc-gw-ipay88.php:380 inc/gateways/ipay88/wpbc-gw-ipay88.php:986
-#: inc/gateways/paypal/wpbc-gw-paypal.php:495 inc/gateways/paypal/wpbc-gw-paypal.php:496
-#: inc/gateways/paypal/wpbc-gw-paypal.php:1327 inc/gateways/sage/wpbc-gw-sage.php:488
+#: inc/gateways/paypal/wpbc-gw-paypal.php:516 inc/gateways/paypal/wpbc-gw-paypal.php:517
+#: inc/gateways/paypal/wpbc-gw-paypal.php:1366 inc/gateways/sage/wpbc-gw-sage.php:488
 #: inc/gateways/sage/wpbc-gw-sage.php:489 inc/gateways/sage/wpbc-gw-sage.php:1042
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:748
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:749
@@ -7466,14 +7466,14 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:440 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:420
 #: inc/gateways/ideal/wpbc-gw-ideal.php:459 inc/gateways/ipay88/wpbc-gw-ipay88.php:381
-#: inc/gateways/paypal/wpbc-gw-paypal.php:497 inc/gateways/sage/wpbc-gw-sage.php:490
+#: inc/gateways/paypal/wpbc-gw-paypal.php:518 inc/gateways/sage/wpbc-gw-sage.php:490
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:750
 msgid "Payment button title"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:441 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:421
 #: inc/gateways/ideal/wpbc-gw-ideal.php:460 inc/gateways/ipay88/wpbc-gw-ipay88.php:382
-#: inc/gateways/paypal/wpbc-gw-paypal.php:498 inc/gateways/sage/wpbc-gw-sage.php:491
+#: inc/gateways/paypal/wpbc-gw-paypal.php:519 inc/gateways/sage/wpbc-gw-sage.php:491
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:751
 msgid "Enter the title of the payment button"
 msgstr ""
@@ -7483,8 +7483,8 @@ msgstr ""
 #: inc/gateways/authorizenet/wpbc-gw-authorizenet.php:1048 inc/gateways/ideal/wpbc-gw-ideal.php:471
 #: inc/gateways/ideal/wpbc-gw-ideal.php:472 inc/gateways/ideal/wpbc-gw-ideal.php:1043
 #: inc/gateways/ipay88/wpbc-gw-ipay88.php:393 inc/gateways/ipay88/wpbc-gw-ipay88.php:394
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:983 inc/gateways/paypal/wpbc-gw-paypal.php:523
-#: inc/gateways/paypal/wpbc-gw-paypal.php:524 inc/gateways/paypal/wpbc-gw-paypal.php:1329
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:983 inc/gateways/paypal/wpbc-gw-paypal.php:544
+#: inc/gateways/paypal/wpbc-gw-paypal.php:545 inc/gateways/paypal/wpbc-gw-paypal.php:1368
 #: inc/gateways/sage/wpbc-gw-sage.php:502 inc/gateways/sage/wpbc-gw-sage.php:503
 #: inc/gateways/sage/wpbc-gw-sage.php:1038 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:762
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:763
@@ -7495,28 +7495,28 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:443 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:434
 #: inc/gateways/ideal/wpbc-gw-ideal.php:473 inc/gateways/ipay88/wpbc-gw-ipay88.php:395
-#: inc/gateways/paypal/wpbc-gw-paypal.php:525 inc/gateways/sage/wpbc-gw-sage.php:504
+#: inc/gateways/paypal/wpbc-gw-paypal.php:546 inc/gateways/sage/wpbc-gw-sage.php:504
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:764
 msgid "Payment description at gateway website"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:444 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:435
 #: inc/gateways/ideal/wpbc-gw-ideal.php:474 inc/gateways/ipay88/wpbc-gw-ipay88.php:396
-#: inc/gateways/paypal/wpbc-gw-paypal.php:526 inc/gateways/sage/wpbc-gw-sage.php:505
+#: inc/gateways/paypal/wpbc-gw-paypal.php:547 inc/gateways/sage/wpbc-gw-sage.php:505
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:765
 msgid "Enter the service name or the reason for the payment here."
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:445 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:436
 #: inc/gateways/ideal/wpbc-gw-ideal.php:475 inc/gateways/ipay88/wpbc-gw-ipay88.php:397
-#: inc/gateways/paypal/wpbc-gw-paypal.php:527 inc/gateways/sage/wpbc-gw-sage.php:506
+#: inc/gateways/paypal/wpbc-gw-paypal.php:548 inc/gateways/sage/wpbc-gw-sage.php:506
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:766
 msgid "You can use any shortcodes, which you have used in content of booking fields data form."
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:446 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:439
 #: inc/gateways/ideal/wpbc-gw-ideal.php:478 inc/gateways/ipay88/wpbc-gw-ipay88.php:400
-#: inc/gateways/paypal/wpbc-gw-paypal.php:530 inc/gateways/sage/wpbc-gw-sage.php:509
+#: inc/gateways/paypal/wpbc-gw-paypal.php:551 inc/gateways/sage/wpbc-gw-sage.php:509
 #, php-format
 msgid "This field support only up to %s characters by payment system."
 msgstr ""
@@ -7585,14 +7585,14 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:460 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:515
 #: inc/gateways/ideal/wpbc-gw-ideal.php:522 inc/gateways/ipay88/wpbc-gw-ipay88.php:437
-#: inc/gateways/paypal/wpbc-gw-paypal.php:591 inc/gateways/sage/wpbc-gw-sage.php:546
+#: inc/gateways/paypal/wpbc-gw-paypal.php:612 inc/gateways/sage/wpbc-gw-sage.php:546
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:808
 msgid "The URL where visitor will be redirected after completing payment."
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:461 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:516
 #: inc/gateways/ideal/wpbc-gw-ideal.php:523 inc/gateways/ipay88/wpbc-gw-ipay88.php:438
-#: inc/gateways/paypal/wpbc-gw-paypal.php:592 inc/gateways/sage/wpbc-gw-sage.php:547
+#: inc/gateways/paypal/wpbc-gw-paypal.php:613 inc/gateways/sage/wpbc-gw-sage.php:547
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:809
 #, php-format
 msgid "For example, a URL to your site that displays a %s\"Thank you for the payment\"%s."
@@ -7606,14 +7606,14 @@ msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:463 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:549
 #: inc/gateways/ideal/wpbc-gw-ideal.php:553 inc/gateways/ipay88/wpbc-gw-ipay88.php:468
-#: inc/gateways/paypal/wpbc-gw-paypal.php:622 inc/gateways/sage/wpbc-gw-sage.php:577
+#: inc/gateways/paypal/wpbc-gw-paypal.php:643 inc/gateways/sage/wpbc-gw-sage.php:577
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:842
 msgid "The URL where the visitor will be redirected after completing payment."
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:464 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:550
 #: inc/gateways/ideal/wpbc-gw-ideal.php:554 inc/gateways/ipay88/wpbc-gw-ipay88.php:469
-#: inc/gateways/paypal/wpbc-gw-paypal.php:623 inc/gateways/sage/wpbc-gw-sage.php:578
+#: inc/gateways/paypal/wpbc-gw-paypal.php:644 inc/gateways/sage/wpbc-gw-sage.php:578
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:843
 #, php-format
 msgid "For example, the URL to your website that displays a %s\"Payment Canceled\"%s page."
@@ -7628,7 +7628,7 @@ msgid "Check this box to automatically approve booking, when visitor makes a suc
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:467 inc/gateways/authorizenet/wpbc-gw-authorizenet.php:564
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:482 inc/gateways/paypal/wpbc-gw-paypal.php:640
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:482 inc/gateways/paypal/wpbc-gw-paypal.php:661
 #: inc/gateways/sage/wpbc-gw-sage.php:591 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:857
 msgid "This will not work, if the visitor leaves the payment page."
 msgstr ""
@@ -7640,7 +7640,7 @@ msgstr ""
 #: inc/gateways/ideal/wpbc-gw-ideal.php:801 inc/gateways/ideal/wpbc-gw-ideal.php:904
 #: inc/gateways/ipay88/wpbc-gw-ipay88.php:729 inc/gateways/ipay88/wpbc-gw-ipay88.php:845
 #: inc/gateways/pay_cash/wpbc-gw-pay_cash.php:283 inc/gateways/pay_cash/wpbc-gw-pay_cash.php:388
-#: inc/gateways/paypal/wpbc-gw-paypal.php:947 inc/gateways/paypal/wpbc-gw-paypal.php:1042
+#: inc/gateways/paypal/wpbc-gw-paypal.php:986 inc/gateways/paypal/wpbc-gw-paypal.php:1081
 #: inc/gateways/sage/wpbc-gw-sage.php:783 inc/gateways/sage/wpbc-gw-sage.php:894
 #: inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:965
 #, php-format
@@ -7874,19 +7874,19 @@ msgstr ""
 msgid "Malaysian Ringgit"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:516 inc/gateways/paypal/wpbc-gw-paypal.php:458
+#: core/lib/wpbc_all_translations1.php:516 inc/gateways/paypal/wpbc-gw-paypal.php:479
 #: inc/gateways/sage/wpbc-gw-sage.php:471
 msgid "Philippine Pesos"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:517 inc/gateways/ideal/wpbc-gw-ideal.php:564
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:479 inc/gateways/paypal/wpbc-gw-paypal.php:637
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:479 inc/gateways/paypal/wpbc-gw-paypal.php:658
 #: inc/gateways/sage/wpbc-gw-sage.php:588 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:854
 msgid "Automatically approve/cancel booking"
 msgstr ""
 
 #: core/lib/wpbc_all_translations1.php:518 inc/gateways/ideal/wpbc-gw-ideal.php:565
-#: inc/gateways/ipay88/wpbc-gw-ipay88.php:480 inc/gateways/paypal/wpbc-gw-paypal.php:638
+#: inc/gateways/ipay88/wpbc-gw-ipay88.php:480 inc/gateways/paypal/wpbc-gw-paypal.php:659
 #: inc/gateways/sage/wpbc-gw-sage.php:589 inc/gateways/stripe_v3/wpbc-gw-stripe_v3.php:855
 msgid ""
 "Check this box to automatically approve bookings, when visitor makes a successful payment, or "
@@ -8216,315 +8216,315 @@ msgstr ""
 msgid "Invalid IPN"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:591 inc/gateways/paypal/wpbc-gw-paypal.php:313
+#: core/lib/wpbc_all_translations1.php:591 inc/gateways/paypal/wpbc-gw-paypal.php:334
 msgid "Make payments with payPal - its fast, free and secure!"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:592 inc/gateways/paypal/wpbc-gw-paypal.php:352
-#: inc/gateways/paypal/wpbc-gw-paypal.php:822
+#: core/lib/wpbc_all_translations1.php:592 inc/gateways/paypal/wpbc-gw-paypal.php:373
+#: inc/gateways/paypal/wpbc-gw-paypal.php:861
 msgid "Paypal Standard"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:593 inc/gateways/paypal/wpbc-gw-paypal.php:356
-#: inc/gateways/paypal/wpbc-gw-paypal.php:822
+#: core/lib/wpbc_all_translations1.php:593 inc/gateways/paypal/wpbc-gw-paypal.php:377
+#: inc/gateways/paypal/wpbc-gw-paypal.php:861
 msgid "Paypal Pro Hosted Solution"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:594 inc/gateways/paypal/wpbc-gw-paypal.php:363
+#: core/lib/wpbc_all_translations1.php:594 inc/gateways/paypal/wpbc-gw-paypal.php:384
 msgid "Account Type"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:595 inc/gateways/paypal/wpbc-gw-paypal.php:375
+#: core/lib/wpbc_all_translations1.php:595 inc/gateways/paypal/wpbc-gw-paypal.php:396
 msgid "Paypal Email address to receive payments"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:596 inc/gateways/paypal/wpbc-gw-paypal.php:377
+#: core/lib/wpbc_all_translations1.php:596 inc/gateways/paypal/wpbc-gw-paypal.php:398
 msgid "This is the Paypal Email address where payments will be sent"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:597 inc/gateways/paypal/wpbc-gw-paypal.php:391
+#: core/lib/wpbc_all_translations1.php:597 inc/gateways/paypal/wpbc-gw-paypal.php:412
 msgid "Secure Merchant ID"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:598 inc/gateways/paypal/wpbc-gw-paypal.php:393
+#: core/lib/wpbc_all_translations1.php:598 inc/gateways/paypal/wpbc-gw-paypal.php:414
 msgid "This is the Secure Merchant ID, which can be found on the profile page"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:599 inc/gateways/paypal/wpbc-gw-paypal.php:408
+#: core/lib/wpbc_all_translations1.php:599 inc/gateways/paypal/wpbc-gw-paypal.php:429
 msgid ""
 " Indicates whether the transaction is payment on a final sale or an authorization for a final "
 "sale, to be captured later. "
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:600 inc/gateways/paypal/wpbc-gw-paypal.php:412
+#: core/lib/wpbc_all_translations1.php:600 inc/gateways/paypal/wpbc-gw-paypal.php:433
 msgid "Sale"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:601 inc/gateways/paypal/wpbc-gw-paypal.php:413
+#: core/lib/wpbc_all_translations1.php:601 inc/gateways/paypal/wpbc-gw-paypal.php:434
 msgid "Authorization"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:602 inc/gateways/paypal/wpbc-gw-paypal.php:424
+#: core/lib/wpbc_all_translations1.php:602 inc/gateways/paypal/wpbc-gw-paypal.php:445
 msgid " Select using test (Sandbox Test Environment) or live PayPal payment."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:603 inc/gateways/paypal/wpbc-gw-paypal.php:430
+#: core/lib/wpbc_all_translations1.php:603 inc/gateways/paypal/wpbc-gw-paypal.php:451
 msgid "Sandbox"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:604 inc/gateways/paypal/wpbc-gw-paypal.php:440
+#: core/lib/wpbc_all_translations1.php:604 inc/gateways/paypal/wpbc-gw-paypal.php:461
 msgid "British Pound"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:605 inc/gateways/paypal/wpbc-gw-paypal.php:441
+#: core/lib/wpbc_all_translations1.php:605 inc/gateways/paypal/wpbc-gw-paypal.php:462
 msgid "Japanese Yen"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:606 inc/gateways/paypal/wpbc-gw-paypal.php:442
+#: core/lib/wpbc_all_translations1.php:606 inc/gateways/paypal/wpbc-gw-paypal.php:463
 #: inc/gateways/sage/wpbc-gw-sage.php:455
 msgid "Australian Dollars"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:607 inc/gateways/paypal/wpbc-gw-paypal.php:444
+#: core/lib/wpbc_all_translations1.php:607 inc/gateways/paypal/wpbc-gw-paypal.php:465
 #: inc/gateways/sage/wpbc-gw-sage.php:457
 msgid "New Zealand Dollar"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:608 inc/gateways/paypal/wpbc-gw-paypal.php:445
+#: core/lib/wpbc_all_translations1.php:608 inc/gateways/paypal/wpbc-gw-paypal.php:466
 #: inc/gateways/sage/wpbc-gw-sage.php:458
 msgid "Swiss Franc"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:609 inc/gateways/paypal/wpbc-gw-paypal.php:446
+#: core/lib/wpbc_all_translations1.php:609 inc/gateways/paypal/wpbc-gw-paypal.php:467
 #: inc/gateways/sage/wpbc-gw-sage.php:459
 msgid "Hong Kong Dollar"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:610 inc/gateways/paypal/wpbc-gw-paypal.php:447
+#: core/lib/wpbc_all_translations1.php:610 inc/gateways/paypal/wpbc-gw-paypal.php:468
 #: inc/gateways/sage/wpbc-gw-sage.php:460
 msgid "Singapore Dollar"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:611 inc/gateways/paypal/wpbc-gw-paypal.php:448
+#: core/lib/wpbc_all_translations1.php:611 inc/gateways/paypal/wpbc-gw-paypal.php:469
 #: inc/gateways/sage/wpbc-gw-sage.php:461
 msgid "Swedish Krona"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:612 inc/gateways/paypal/wpbc-gw-paypal.php:449
+#: core/lib/wpbc_all_translations1.php:612 inc/gateways/paypal/wpbc-gw-paypal.php:470
 #: inc/gateways/sage/wpbc-gw-sage.php:462
 msgid "Danish Krone"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:613 inc/gateways/paypal/wpbc-gw-paypal.php:450
+#: core/lib/wpbc_all_translations1.php:613 inc/gateways/paypal/wpbc-gw-paypal.php:471
 #: inc/gateways/sage/wpbc-gw-sage.php:463
 msgid "Polish Zloty"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:614 inc/gateways/paypal/wpbc-gw-paypal.php:451
+#: core/lib/wpbc_all_translations1.php:614 inc/gateways/paypal/wpbc-gw-paypal.php:472
 #: inc/gateways/sage/wpbc-gw-sage.php:464
 msgid "Norwegian Krone"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:615 inc/gateways/paypal/wpbc-gw-paypal.php:452
+#: core/lib/wpbc_all_translations1.php:615 inc/gateways/paypal/wpbc-gw-paypal.php:473
 #: inc/gateways/sage/wpbc-gw-sage.php:465
 msgid "Hungarian Forint"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:616 inc/gateways/paypal/wpbc-gw-paypal.php:453
+#: core/lib/wpbc_all_translations1.php:616 inc/gateways/paypal/wpbc-gw-paypal.php:474
 #: inc/gateways/sage/wpbc-gw-sage.php:466
 msgid "Czech Koruna"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:617 inc/gateways/paypal/wpbc-gw-paypal.php:454
+#: core/lib/wpbc_all_translations1.php:617 inc/gateways/paypal/wpbc-gw-paypal.php:475
 msgid "Israeli New Shekel"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:618 inc/gateways/paypal/wpbc-gw-paypal.php:455
+#: core/lib/wpbc_all_translations1.php:618 inc/gateways/paypal/wpbc-gw-paypal.php:476
 #: inc/gateways/sage/wpbc-gw-sage.php:468
 msgid "Mexican Peso"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:619 inc/gateways/paypal/wpbc-gw-paypal.php:456
+#: core/lib/wpbc_all_translations1.php:619 inc/gateways/paypal/wpbc-gw-paypal.php:477
 #: inc/gateways/sage/wpbc-gw-sage.php:469
 msgid "Brazilian Real (only for Brazilian users)"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:620 inc/gateways/paypal/wpbc-gw-paypal.php:457
+#: core/lib/wpbc_all_translations1.php:620 inc/gateways/paypal/wpbc-gw-paypal.php:478
 #: inc/gateways/sage/wpbc-gw-sage.php:470
 msgid "Malaysian Ringgits (only for Malaysian users)"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:621 inc/gateways/paypal/wpbc-gw-paypal.php:459
+#: core/lib/wpbc_all_translations1.php:621 inc/gateways/paypal/wpbc-gw-paypal.php:480
 #: inc/gateways/sage/wpbc-gw-sage.php:472
 msgid "Taiwan New Dollars"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:622 inc/gateways/paypal/wpbc-gw-paypal.php:460
+#: core/lib/wpbc_all_translations1.php:622 inc/gateways/paypal/wpbc-gw-paypal.php:481
 #: inc/gateways/sage/wpbc-gw-sage.php:473
 msgid "Thai Baht"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:623 inc/gateways/paypal/wpbc-gw-paypal.php:461
+#: core/lib/wpbc_all_translations1.php:623 inc/gateways/paypal/wpbc-gw-paypal.php:482
 msgid "Turkish Lira (only for Turkish members)"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:624 inc/gateways/paypal/wpbc-gw-paypal.php:480
+#: core/lib/wpbc_all_translations1.php:624 inc/gateways/paypal/wpbc-gw-paypal.php:501
 msgid "Custom button title"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:625 inc/gateways/paypal/wpbc-gw-paypal.php:487
+#: core/lib/wpbc_all_translations1.php:625 inc/gateways/paypal/wpbc-gw-paypal.php:508
 msgid "Payment Button type"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:626 inc/gateways/paypal/wpbc-gw-paypal.php:542
+#: core/lib/wpbc_all_translations1.php:626 inc/gateways/paypal/wpbc-gw-paypal.php:563
 msgid "Show Reference Text Box"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:627 inc/gateways/paypal/wpbc-gw-paypal.php:543
+#: core/lib/wpbc_all_translations1.php:627 inc/gateways/paypal/wpbc-gw-paypal.php:564
 msgid "Check this box to show Reference Text Box"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:628 inc/gateways/paypal/wpbc-gw-paypal.php:551
-#: inc/gateways/paypal/wpbc-gw-paypal.php:552 inc/gateways/paypal/wpbc-gw-paypal.php:1331
+#: core/lib/wpbc_all_translations1.php:628 inc/gateways/paypal/wpbc-gw-paypal.php:572
+#: inc/gateways/paypal/wpbc-gw-paypal.php:573 inc/gateways/paypal/wpbc-gw-paypal.php:1370
 msgid "Enter your phone number"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:629 inc/gateways/paypal/wpbc-gw-paypal.php:553
+#: core/lib/wpbc_all_translations1.php:629 inc/gateways/paypal/wpbc-gw-paypal.php:574
 msgid "Reference Text Box Title"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:630 inc/gateways/paypal/wpbc-gw-paypal.php:554
+#: core/lib/wpbc_all_translations1.php:630 inc/gateways/paypal/wpbc-gw-paypal.php:575
 msgid ""
 "Enter a title for the Reference text box (i.e. Your email address). Visitors will see this text."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:631 inc/gateways/paypal/wpbc-gw-paypal.php:575
+#: core/lib/wpbc_all_translations1.php:631 inc/gateways/paypal/wpbc-gw-paypal.php:596
 msgid "Return URL from PayPal"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:632 inc/gateways/paypal/wpbc-gw-paypal.php:606
+#: core/lib/wpbc_all_translations1.php:632 inc/gateways/paypal/wpbc-gw-paypal.php:627
 msgid "Cancel Return URL from PayPal"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:633 inc/gateways/paypal/wpbc-gw-paypal.php:657
+#: core/lib/wpbc_all_translations1.php:633 inc/gateways/paypal/wpbc-gw-paypal.php:696
 #, php-format
 msgid "To use this feature you %smust activate auto-return link%s at your Paypal account."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:634 inc/gateways/paypal/wpbc-gw-paypal.php:658
+#: core/lib/wpbc_all_translations1.php:634 inc/gateways/paypal/wpbc-gw-paypal.php:697
 msgid "Follow these steps to configure it:"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:635 inc/gateways/paypal/wpbc-gw-paypal.php:660
+#: core/lib/wpbc_all_translations1.php:635 inc/gateways/paypal/wpbc-gw-paypal.php:699
 msgid "Log in to your PayPal account."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:636 inc/gateways/paypal/wpbc-gw-paypal.php:661
+#: core/lib/wpbc_all_translations1.php:636 inc/gateways/paypal/wpbc-gw-paypal.php:700
 msgid "Click the Profile subtab."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:637 inc/gateways/paypal/wpbc-gw-paypal.php:662
+#: core/lib/wpbc_all_translations1.php:637 inc/gateways/paypal/wpbc-gw-paypal.php:701
 msgid "Click Website Payment Preferences in the Seller Preferences column."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:638 inc/gateways/paypal/wpbc-gw-paypal.php:663
+#: core/lib/wpbc_all_translations1.php:638 inc/gateways/paypal/wpbc-gw-paypal.php:702
 msgid "Under Auto Return for Website Payments, click the On radio button."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:639 inc/gateways/paypal/wpbc-gw-paypal.php:664
+#: core/lib/wpbc_all_translations1.php:639 inc/gateways/paypal/wpbc-gw-paypal.php:703
 msgid "For the Return URL, enter the Return URL from PayPal on your site for successfull payment."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:640 inc/gateways/paypal/wpbc-gw-paypal.php:673
+#: core/lib/wpbc_all_translations1.php:640 inc/gateways/paypal/wpbc-gw-paypal.php:712
 msgid ""
 "Instant Payment Notification (IPN) is a message service that notifies you of events related to "
 "PayPal transactions"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:641 inc/gateways/paypal/wpbc-gw-paypal.php:682
+#: core/lib/wpbc_all_translations1.php:641 inc/gateways/paypal/wpbc-gw-paypal.php:721
 msgid "Sending email for verified transaction"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:642 inc/gateways/paypal/wpbc-gw-paypal.php:692
+#: core/lib/wpbc_all_translations1.php:642 inc/gateways/paypal/wpbc-gw-paypal.php:731
 #, php-format
 msgid "Email for getting report for %sverified%s transactions."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:643 inc/gateways/paypal/wpbc-gw-paypal.php:705
+#: core/lib/wpbc_all_translations1.php:643 inc/gateways/paypal/wpbc-gw-paypal.php:744
 msgid "Sending email for invalid transaction"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:644 inc/gateways/paypal/wpbc-gw-paypal.php:715
+#: core/lib/wpbc_all_translations1.php:644 inc/gateways/paypal/wpbc-gw-paypal.php:754
 #, php-format
 msgid "Email for getting report for %sinvalid%s transactions."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:645 inc/gateways/paypal/wpbc-gw-paypal.php:728
+#: core/lib/wpbc_all_translations1.php:645 inc/gateways/paypal/wpbc-gw-paypal.php:767
 msgid "Sending email if error occur during verification"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:646 inc/gateways/paypal/wpbc-gw-paypal.php:738
+#: core/lib/wpbc_all_translations1.php:646 inc/gateways/paypal/wpbc-gw-paypal.php:777
 #, php-format
 msgid "Email for getting report for %ssome errors in  verification process%s."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:647 inc/gateways/paypal/wpbc-gw-paypal.php:750
+#: core/lib/wpbc_all_translations1.php:647 inc/gateways/paypal/wpbc-gw-paypal.php:789
 msgid "Use SSL connection"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:648 inc/gateways/paypal/wpbc-gw-paypal.php:751
+#: core/lib/wpbc_all_translations1.php:648 inc/gateways/paypal/wpbc-gw-paypal.php:790
 msgid "Use the SSL connection for posting data, instead of standard HTTP connection"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:649 inc/gateways/paypal/wpbc-gw-paypal.php:758
+#: core/lib/wpbc_all_translations1.php:649 inc/gateways/paypal/wpbc-gw-paypal.php:797
 msgid "Use cURL posting"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:650 inc/gateways/paypal/wpbc-gw-paypal.php:759
+#: core/lib/wpbc_all_translations1.php:650 inc/gateways/paypal/wpbc-gw-paypal.php:798
 msgid "Use the cURL for posting data, instead of fsockopen() function"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:651 inc/gateways/paypal/wpbc-gw-paypal.php:775
+#: core/lib/wpbc_all_translations1.php:651 inc/gateways/paypal/wpbc-gw-paypal.php:814
 msgid " Follow these instructions to set up your listener at your PayPal account:"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:652 inc/gateways/paypal/wpbc-gw-paypal.php:777
+#: core/lib/wpbc_all_translations1.php:652 inc/gateways/paypal/wpbc-gw-paypal.php:816
 msgid "Click Profile on the My Account tab."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:653 inc/gateways/paypal/wpbc-gw-paypal.php:778
+#: core/lib/wpbc_all_translations1.php:653 inc/gateways/paypal/wpbc-gw-paypal.php:817
 msgid "Click Instant Payment Notification Preferences in the Selling Preferences column."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:654 inc/gateways/paypal/wpbc-gw-paypal.php:779
+#: core/lib/wpbc_all_translations1.php:654 inc/gateways/paypal/wpbc-gw-paypal.php:818
 msgid "Click Choose IPN Settings to specify your listeners URL and activate the listener."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:655 inc/gateways/paypal/wpbc-gw-paypal.php:780
+#: core/lib/wpbc_all_translations1.php:655 inc/gateways/paypal/wpbc-gw-paypal.php:819
 msgid "Specify the URL for your listener in the Notification URL field as:"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:656 inc/gateways/paypal/wpbc-gw-paypal.php:782
+#: core/lib/wpbc_all_translations1.php:656 inc/gateways/paypal/wpbc-gw-paypal.php:821
 msgid "Click Receive IPN messages (Enabled) to enable your listener."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:657 inc/gateways/paypal/wpbc-gw-paypal.php:783
+#: core/lib/wpbc_all_translations1.php:657 inc/gateways/paypal/wpbc-gw-paypal.php:822
 msgid "Click Save."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:658 inc/gateways/paypal/wpbc-gw-paypal.php:784
+#: core/lib/wpbc_all_translations1.php:658 inc/gateways/paypal/wpbc-gw-paypal.php:823
 msgid "Click Back to Profile Summary to return to the Profile after activating your listener."
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:659 inc/gateways/paypal/wpbc-gw-paypal.php:946
+#: core/lib/wpbc_all_translations1.php:659 inc/gateways/paypal/wpbc-gw-paypal.php:985
 msgid "PayPal"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:660 inc/gateways/paypal/wpbc-gw-paypal.php:948
+#: core/lib/wpbc_all_translations1.php:660 inc/gateways/paypal/wpbc-gw-paypal.php:987
 msgid "Integration of Paypal payment system"
 msgstr ""
 
-#: core/lib/wpbc_all_translations1.php:661 inc/gateways/paypal/wpbc-gw-paypal.php:1069
+#: core/lib/wpbc_all_translations1.php:661 inc/gateways/paypal/wpbc-gw-paypal.php:1108
 msgid "PayPal IPN"
 msgstr ""
 
@@ -9335,4 +9335,23 @@ msgstr ""
 msgid ""
 "Check this box if you want apply discount coupon codes directly to days cost, without additional "
 "costs."
+msgstr ""
+
+#: inc/_ps/admin/page-settings-form.php:338
+msgid "Calendar next to form"
+msgstr ""
+
+#: inc/gateways/paypal/wpbc-gw-paypal.php:227
+msgid "PayPal fee"
+msgstr ""
+
+#: inc/gateways/paypal/wpbc-gw-paypal.php:671
+msgid "PayPal Fee"
+msgstr ""
+
+#: inc/gateways/paypal/wpbc-gw-paypal.php:674
+#, php-format
+msgid ""
+"If you need to add %sPayPal tax fee%s payment (only for PayPal payment system), then enter "
+"amount of tax fee in percents"
 msgstr ""

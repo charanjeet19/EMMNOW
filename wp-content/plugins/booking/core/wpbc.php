@@ -112,7 +112,7 @@ public function define_admin_menu(){
     $booking_menu_position = get_bk_option( 'booking_menu_position' );
     switch ( $booking_menu_position ) {
         case 'top':
-            $booking_menu_position = 3.3;
+            $booking_menu_position = '3.3';										//FixIn: 8.7.7.16
             break;
         case 'middle':
             global $_wp_last_object_menu;                                       // The index of the last top-level menu in the object menu group
@@ -120,10 +120,10 @@ public function define_admin_menu(){
             $booking_menu_position = $_wp_last_object_menu; // 58.9;
             break;
         case 'bottom':
-            $booking_menu_position = 99.999;
+            $booking_menu_position = '99.999';
             break;
         default:
-            $booking_menu_position = 3.3;
+            $booking_menu_position = '3.3';
             break;
     }
 

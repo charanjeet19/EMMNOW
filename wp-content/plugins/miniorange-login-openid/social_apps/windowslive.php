@@ -1,7 +1,7 @@
 <?php
 
 
-class windowslive
+class mo_windowslive
 {
     public $color = "#00A1F1";
     public $scope = "wl.emails,wl.basic,wl.photos,wl.contacts_photos";

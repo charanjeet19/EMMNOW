@@ -4,7 +4,7 @@
 * @link http://snazzymaps.com/style/25/blue-water
 */
 $map = array(
-	'post_title' => __('Blue Water', 'wpsimplelocator'),
+	'post_title' => __('Blue Water', 'simple-locator'),
 	'post_status' => 'publish',
 	'post_type' => 'wpslmaps',
 	'ping_status' => 'closed',

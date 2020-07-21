@@ -32,7 +32,7 @@ class FinishImport
 	*/
 	private function saveImport()
 	{
-		$title = __('Import on ', 'wpsimplelocator') . date_i18n( 'Y-m-d H:m:s', time() );
+		$title = __('Import on ', 'simple-locator') . date_i18n( 'Y-m-d H:m:s', time() );
 		$importpost = array(
 			'post_title' => $title, 
 			'post_status' => 'publish',

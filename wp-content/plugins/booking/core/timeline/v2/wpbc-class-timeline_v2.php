@@ -94,23 +94,23 @@ class WPBC_TimelineFlex {
                                             , 6 =>  __( 'Sat', 'booking' )
                                             , 7 =>  __( 'Sun', 'booking' )
                                             )
-                                        , '1' => array(                         //FixIn: 7.0.1.11
-                                              1 => substr( __( 'Mon', 'booking' ), 0, -1 )
-                                            , 2 => substr( __( 'Tue', 'booking' ), 0, -1 )
-                                            , 3 => substr( __( 'Wed', 'booking' ), 0, -1 )
-                                            , 4 => substr( __( 'Thu', 'booking' ), 0, -1 )
-                                            , 5 => substr( __( 'Fri', 'booking' ), 0, -1 )
-                                            , 6 => substr( __( 'Sat', 'booking' ), 0, -1 )
-                                            , 7 => substr( __( 'Sun', 'booking' ), 0, -1 ) 
+                                        , '1' => array(                         //FixIn: 7.0.1.11						//FixIn: 8.7.7.14
+                                              1 => mb_substr( __( 'Mon', 'booking' ), 0, -1 )
+                                            , 2 => mb_substr( __( 'Tue', 'booking' ), 0, -1 )
+                                            , 3 => mb_substr( __( 'Wed', 'booking' ), 0, -1 )
+                                            , 4 => mb_substr( __( 'Thu', 'booking' ), 0, -1 )
+                                            , 5 => mb_substr( __( 'Fri', 'booking' ), 0, -1 )
+                                            , 6 => mb_substr( __( 'Sat', 'booking' ), 0, -1 )
+                                            , 7 => mb_substr( __( 'Sun', 'booking' ), 0, -1 )
                                             )
                                         , 'short' => array(
-                                              1 => substr( __( 'Mon', 'booking' ), 0, 1 )
-                                            , 2 => substr( __( 'Tue', 'booking' ), 0, 1 )
-                                            , 3 => substr( __( 'Wed', 'booking' ), 0, 1 )
-                                            , 4 => substr( __( 'Thu', 'booking' ), 0, 1 )
-                                            , 5 => substr( __( 'Fri', 'booking' ), 0, 1 )
-                                            , 6 => substr( __( 'Sat', 'booking' ), 0, 1 )
-                                            , 7 => substr( __( 'Sun', 'booking' ), 0, 1 )
+                                              1 => mb_substr( __( 'Mon', 'booking' ), 0, 1 )
+                                            , 2 => mb_substr( __( 'Tue', 'booking' ), 0, 1 )
+                                            , 3 => mb_substr( __( 'Wed', 'booking' ), 0, 1 )
+                                            , 4 => mb_substr( __( 'Thu', 'booking' ), 0, 1 )
+                                            , 5 => mb_substr( __( 'Fri', 'booking' ), 0, 1 )
+                                            , 6 => mb_substr( __( 'Sat', 'booking' ), 0, 1 )
+                                            , 7 => mb_substr( __( 'Sun', 'booking' ), 0, 1 )
                                             )
                                     );
         
@@ -892,7 +892,7 @@ class WPBC_TimelineFlex {
 			if ( 0 != $is_started ) {
 				?><div class="warning_check_in_out_not_equal"><?php
 				debuge( 'Warning! Number of check  in != check out times.', $dates_to_check, $is_started)  ;
-				?></div><script type="text/javascript"> jQuery( '.warning_check_in_out_not_equal' ).animate( {opacity: 1}, 3000 ).slideToggle(1000); </script><?php
+				?></div><script type="text/javascript"> jQuery( '.warning_check_in_out_not_equal' ).animate( {opacity: 1}, 3000 ).toggle(1000); </script><?php
 			}
 
 
@@ -1263,7 +1263,7 @@ if(1)
 	    $limit_hours              = 24;
 
         if ( $is_matrix ) {
-            
+
             // MATRIX VIEW
             switch ( $view_days_num ) {
                 case '1':
@@ -2978,10 +2978,17 @@ function bookingflextimeline_shortcode($attr) {
 
 	//if ( function_exists( 'wpbc_br_cache' ) ) $br_cache = wpbc_br_cache();  // Init booking resources cache
 
-
-	if ( ! isset( $attr['type' ] ) ) {
-		$attr['type' ] = wpbc_get_default_resource();
+	if ( empty( $attr['type'] ) ) {                                                                        // 8.7.7.4
+		if ( class_exists( 'wpdev_bk_personal' ) ) {
+			$br_list      = wpbc_get_all_booking_resources_list();
+			$br_list      = array_keys( $br_list );
+			$br_list      = implode( ',', $br_list );
+			$attr['type'] = $br_list;
+		} else {
+			$attr['type'] = wpbc_get_default_resource();
+		}
 	}
+
 	if ( ! isset( $attr['view_days_num' ] ) ) {
 		$attr['view_days_num' ] = 30;
 	}

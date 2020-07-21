@@ -1,7 +1,7 @@
 <?php
 
 
-class google
+class mo_google
 {
     public $color="#DD4B39";
     public $scope="email+profile";

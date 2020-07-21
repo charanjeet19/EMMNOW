@@ -20,7 +20,7 @@ function mo_openid_registration()
             <h3><?php echo mo_sl('Role Mapping');?></h3>
             <div>
                 <?php echo mo_sl('Universal Role');?>:
-                <select name="mapping_value_default" style="margin-left: 2%; color: #000000;width:20%;font-size: 15px; background-color: #d4d7ee" id="default_group_mapping">                    <?php
+                <select name="mapping_value_default" style="margin-left: 2%; color: #000000;width:20%;font-size: 15px; background-color: #d4d7ee" id="default_group_mapping"> <?php
                     if(get_option('mo_openid_login_role_mapping'))
                         $default_role = get_option('mo_openid_login_role_mapping');
                     else
@@ -28,6 +28,11 @@ function mo_openid_registration()
                     wp_dropdown_roles($default_role); ?>
                 </select>
                 <label style="cursor: auto" class="mo_openid_note_style"> <?php echo mo_sl('Use Role Mapping to assign this role to the all users registering through Social Login. According to the role mapped user will be granted role on the website.');?></label>
+                <label style="cursor: auto" class="mo_openid_note_style">If you want the user to select the role/profile please use our Custom Registration Form Add on.
+                    <?php if (!is_plugin_active('miniorange-login-openid-extra-attributes-addon/miniorange_openid_sso_customization_addon.php')) {?>
+                    <a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo site_url().'/wp-admin/admin.php?page=mo_openid_settings_addOn&tab=licensing_plans'; ?>"><?php echo mo_sl('PRO');?></a>
+                    <?php } ?>
+                </label>
             </div><br><hr>
             <h3><?php echo mo_sl('Enable Email Notification to Admin');?></h3>
             <div>

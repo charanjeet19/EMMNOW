@@ -24,7 +24,7 @@ abstract class ImportListenerBase
 	protected function validateNonce()
 	{
 		try {
-			$this->nonce_validator->validate($_POST['nonce'], 'wpsl-import-nonce');
+			$this->nonce_validator->validate(sanitize_text_field($_POST['nonce']), 'wpsl-import-nonce');
 		} catch ( \Exception $e ){
 			return $this->error($e->getMessage());
 		}			
@@ -35,7 +35,7 @@ abstract class ImportListenerBase
 	*/
 	protected function validateUser()
 	{
-		if ( !current_user_can('delete_others_posts') ) return $this->error(__('You do not have the necessary capabilities to undo an import. Contact your site administrator to perform this action.', 'wpsimplelocator'));
+		if ( !current_user_can('delete_others_posts') ) return $this->error(__('You do not have the necessary capabilities to undo an import. Contact your site administrator to perform this action.', 'simple-locator'));
 	}
 
 	/**

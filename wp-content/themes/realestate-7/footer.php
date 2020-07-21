@@ -114,13 +114,138 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
     ?>
 	<?php
 	$current_user = wp_get_current_user();
+	
+	$current_user_first_name = get_user_meta( $current_user->data->ID, 'first_name', true );
+	$current_user_last_name = get_user_meta( $current_user->data->ID, 'last_name', true );
+	global $woocommerce;
+$woocommerce->cart->empty_cart();
+if(isset($_GET['service'])){
+$product_id    = intval($_GET['service']);
+$woocommerce->cart->add_to_cart($product_id,1);
+}
+
+// Form Utility data 
+$utility_data = $wpdb->get_results("SELECT * FROM utility_form_data WHERE user_id = ".$current_user->data->ID);
+$usps_data = $wpdb->get_results("SELECT * FROM usps_form_data WHERE user_id = ".$current_user->data->ID);
+ echo '<pre>';
+print_r($usps_data);
+echo '</pre>'; 
 	?>
 	<script>
+	
+		var service_id=getParameterByName('service');
+		if(service_id){
+	 console.log(service_id);
+}else{
+    	console.log("Service Id Not Passed");
+}
+	
+
+	
+	function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+	
 	    jQuery(document).ready(function($){
 	        var user_email = '<?php echo $current_user->data->user_email; ?>';
 	         var user_nicename = '<?php echo $current_user->data->user_nicename; ?>';
+	         var user_fullname= '<?php echo $current_user_first_name." ".$current_user_last_name; ?>';
+	         var user_id= '<?php echo $current_user->data->ID; ?>';
+
 	         jQuery('#lguseremail').val(user_email);
-	         jQuery('#lgusername').val(user_nicename);
+	         jQuery('#lgusername').val(user_fullname);
+	         jQuery('#lguser_id').val(user_id);
+        
+        });
+		
+		
+		jQuery(document).ready(function($){
+	        var cep = '<?php echo $utility_data[0]->cep; ?>';
+	        var accno = '<?php echo $utility_data[0]->accno; ?>';
+	        var action = '<?php echo $utility_data[0]->action; ?>';
+	        var cgp = '<?php echo $utility_data[0]->cgp; ?>';
+	        var accno1 = '<?php echo $utility_data[0]->accno1; ?>';
+	        var action1 = '<?php echo $utility_data[0]->action1; ?>';
+	        var gsstartdate = '<?php echo $utility_data[0]->gsstartdate; ?>';
+	        var gsenddate = '<?php echo $utility_data[0]->gsenddate; ?>';
+	        var water = '<?php echo $utility_data[0]->water; ?>';
+	        var action2 = '<?php echo $utility_data[0]->action2; ?>';
+	        var fourdigit = '<?php echo $utility_data[0]->fourdigit; ?>';
+
+	         jQuery('#cep').val(cep);
+			 jQuery('#cep').niceSelect('update'); 
+	         jQuery('#accno').val(accno);
+	         jQuery('#action').val(action);
+			 jQuery('#action').niceSelect('update'); 
+	         jQuery('#cgp').val(cgp);
+			 jQuery('#cgp').niceSelect('update'); 
+	         jQuery('#accno1').val(accno1);
+	         jQuery('#action1').val(action1);
+			 jQuery('#action1').niceSelect('update'); 
+	         jQuery('#gsstartdate').val(gsstartdate);
+	         jQuery('#gsenddate').val(gsenddate);
+	         jQuery('#water').val(water);
+	         jQuery('#action2').val(action2);
+			 jQuery('#action2').niceSelect('update'); 
+	         jQuery('#fourdigit').val(fourdigit);
+        
+        });
+		
+		jQuery(document).ready(function($){
+	        var whoismoving = '<?php echo $usps_data[0]->whoIsMoving; ?>';
+	        var firstName = '<?php echo $usps_data[0]->firstName; ?>';
+	        var middleName = '<?php echo $usps_data[0]->middleName; ?>';
+	        var lastName = '<?php echo $usps_data[0]->lastName; ?>';
+	        var Suffix = '<?php echo $usps_data[0]->Suffix; ?>';
+	        var emailAddress = '<?php echo $usps_data[0]->emailAddress; ?>';
+	        var confirmEmailAddress = '<?php echo $usps_data[0]->confirmEmailAddress; ?>';
+	        var phoneNumber = '<?php echo $usps_data[0]->phoneNumber; ?>';
+	        var phoneType = '<?php echo $usps_data[0]->phoneType; ?>';
+	        var moveType = '<?php echo $usps_data[0]->moveType; ?>';
+	        var startDate = '<?php echo $usps_data[0]->startDate; ?>';
+	        var endDate = '<?php echo $usps_data[0]->endDate; ?>';
+	        var oldZipCode = '<?php echo $usps_data[0]->oldZipCode; ?>';
+	        var oldCity = '<?php echo $usps_data[0]->oldCity; ?>';
+	        var oldState = '<?php echo $usps_data[0]->oldState; ?>';
+	        var oldStreet = '<?php echo $usps_data[0]->oldStreet; ?>';
+	        var newZipCode = '<?php echo $usps_data[0]->newZipCode; ?>';
+	        var newCity = '<?php echo $usps_data[0]->newCity; ?>';
+	        var newState = '<?php echo $usps_data[0]->newState; ?>';
+	        var newStreet = '<?php echo $usps_data[0]->newStreet; ?>';
+
+	         jQuery('#whoIsMoving').val(whoismoving);
+			 jQuery('#whoIsMoving').niceSelect('update'); 
+	         jQuery('#firstName').val(firstName);
+	         jQuery('#middleName').val(middleName);
+	         jQuery('#lastName').val(lastName);
+	         jQuery('#Suffix').val(Suffix);
+			 jQuery('#Suffix').niceSelect('update'); 
+	         jQuery('#emailAddress').val(emailAddress);
+	         jQuery('#confirmEmailAddress').val(confirmEmailAddress);
+	         jQuery('#phoneNumber').val(phoneNumber);
+	         jQuery('#phoneType').val(phoneType);
+			 jQuery('#phoneType').niceSelect('update'); 
+	        // jQuery("input[name='moveType']").val(moveType);
+			 jQuery("input[name='moveType'][value='"+moveType+"']").prop('checked', true);
+	         jQuery('#startDate').val(startDate);
+	         jQuery('#endDate').val(endDate);
+	         jQuery('#oldZipCode').val(oldZipCode);
+	         jQuery('#oldCity').val(oldCity);
+	         jQuery('#oldState').val(oldState);
+			 jQuery('#oldState').niceSelect('update'); 
+	         jQuery('#oldStreet').val(oldStreet);
+	         jQuery('#newZipCode').val(newZipCode);
+	         jQuery('#newCity').val(newCity);
+	         jQuery('#newState').val(newState);
+			  jQuery('#newState').niceSelect('update'); 
+	         jQuery('#newStreet').val(newStreet);
+
         
         });
 

@@ -1,7 +1,7 @@
 <?php
 
 
-class vkontakte
+class mo_vkontakte
 {
     public $color="#4C75A3";
     public $scope="friends,photos,email";

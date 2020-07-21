@@ -4,12 +4,12 @@
  * Plugin Name: Social Login, Social Sharing by miniOrange
  * Plugin URI: https://www.miniorange.com
  * Description: Allow your users to login, comment and share with Facebook, Google, Apple, Twitter, LinkedIn etc using customizable buttons.
- * Version: 7.3.8
+ * Version: 7.3.9
  * Author: miniOrange
  * License URI: http://miniorange.com/usecases/miniOrange_User_Agreement.pdf
  */
 
-define('MO_OPENID_SOCIAL_LOGIN_VERSION', '7.3.8');
+define('MO_OPENID_SOCIAL_LOGIN_VERSION', '7.3.9');
 define('plugin_url', plugin_dir_url(__FILE__) . "includes/images/icons/");
 define('MOSL_PLUGIN_DIR',str_replace('/','\\',plugin_dir_path(__FILE__)));
 require('miniorange_openid_sso_settings_page.php');
@@ -116,12 +116,19 @@ class miniorange_openid_sso_settings
         add_option( 'mo_openid_email_enable', '1');
         add_option( 'mo_openid_tour_new','0');
         add_option( 'mo_openid_deactivate_reason_form',0);
+        add_option('mo_openid_registration_email_content', 'Hello,<br><br>##User Name## has registered to your site  successfully.<br><br>Thanks,<br>miniOrange.');
+        add_option('mo_openid_user_register_message', 'Hi ##User Name##,<br><br>Thank you for registering to our site.<br><br>Thanks,<br>miniOrange.');
 
         add_option('mo_openid_user_activation_date','0');
         //GDPR options
         add_option('mo_openid_gdpr_consent_enable', 0);
         add_option( 'mo_openid_privacy_policy_text', 'terms and conditions');
         add_option( 'mo_openid_gdpr_consent_message','I accept the terms and conditions.');
+
+        //woocommerce display options
+        add_option( 'mo_openid_woocommerce_before_login_form','0');
+        add_option( 'mo_openid_woocommerce_center_login_form','0');
+
         //social sharing
         add_option( 'mo_openid_share_theme', 'oval' );
         add_option( 'mo_openid_share_custom_theme', 'default' );
@@ -156,6 +163,13 @@ class miniorange_openid_sso_settings
         add_option( 'mo_disqus_shortname', '' );
         add_option( 'mo_openid_social_comment_heading_label', 'Leave a Reply' );
         add_option( 'mo_openid_login_theme', 'default' );
+
+        if(get_option('mo_openid_woocommerce_before_login_form') == 1){
+            add_action( 'woocommerce_login_form_start', array($this, 'mo_openid_add_social_login'));
+        }
+        if(get_option('mo_openid_woocommerce_center_login_form') == 1){
+            add_action( 'woocommerce_login_form', array($this, 'mo_openid_add_social_login'));
+        }
 
         if(get_option('mo_openid_default_comment_enable') == 1 ){
             add_action('comment_form_must_log_in_after', array($this, 'mo_openid_add_social_login'));
@@ -490,6 +504,8 @@ Thank you.';
                     update_option('mo_openid_default_login_enable', isset($_POST['mo_openid_default_login_enable']) ? sanitize_text_field($_POST['mo_openid_default_login_enable']) : 0);
                     update_option('mo_openid_default_register_enable', isset($_POST['mo_openid_default_register_enable']) ? sanitize_text_field($_POST['mo_openid_default_register_enable']) : 0);
                     update_option('mo_openid_default_comment_enable', isset($_POST['mo_openid_default_comment_enable']) ? sanitize_text_field($_POST['mo_openid_default_comment_enable']) : 0);
+                    update_option('mo_openid_woocommerce_before_login_form', isset($_POST['mo_openid_woocommerce_before_login_form']) ? sanitize_text_field($_POST['mo_openid_woocommerce_before_login_form']) : 0);
+                    update_option('mo_openid_woocommerce_center_login_form', isset($_POST['mo_openid_woocommerce_center_login_form']) ? sanitize_text_field($_POST['mo_openid_woocommerce_center_login_form']) : 0);
                     update_option('moopenid_logo_check', isset($_POST['moopenid_logo_check']) ? sanitize_text_field($_POST['moopenid_logo_check']) : 0);
                     update_option('mo_openid_message', 'Your settings are saved successfully.');
 	                mo_openid_show_success_message();

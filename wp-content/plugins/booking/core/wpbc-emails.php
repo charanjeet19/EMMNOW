@@ -44,7 +44,7 @@ function wpbc_validate_emails( $emails ) {
             }
         } else {                
             // Check about correct  format  of email
-            if( preg_match( '/([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/im', $recipient, $matches ) ) {
+            if( preg_match( '/([\w\.\-_]+)?\w+@[\w\-_]+(\.\w+){1,}/im', $recipient, $matches ) ) {                      //FixIn: 8.7.7.2
                 $recipient = $matches[0];
             }             
         }

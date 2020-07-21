@@ -1,7 +1,7 @@
 <?php
 
 
-class kakao
+class mo_kakao
 {
     public $color="#F9E000";
 }

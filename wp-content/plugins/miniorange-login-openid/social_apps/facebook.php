@@ -1,6 +1,6 @@
 <?php
 
-class facebook
+class mo_facebook
 {
     public $color="#3A5897";
     public $scope="email, public_profile";

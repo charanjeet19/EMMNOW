@@ -27,7 +27,7 @@ class RemoveImport extends ImportListenerBase
 	*/
 	private function setID()
 	{
-		$this->import_id = ( isset($_POST['remove_import_id']) ) ? intval($_POST['remove_import_id']) : 0;
+		$this->import_id = ( isset($_POST['remove_import_id']) ) ? intval(sanitize_text_field($_POST['remove_import_id'])) : 0;
 	}
 
 	/**
@@ -43,7 +43,7 @@ class RemoveImport extends ImportListenerBase
 	*/
 	protected function success($step)
 	{
-		$url = admin_url('options-general.php?page=wp_simple_locator&tab=import&success=' . __('Import successfully removed.', 'wpsimplelocator'));
+		$url = admin_url('options-general.php?page=wp_simple_locator&tab=import&success=' . __('Import successfully removed.', 'simple-locator'));
 		return header('Location:' . $url);
 	}
 

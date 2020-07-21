@@ -784,7 +784,7 @@ class CT_Listings_List extends Widget_Base {
 		                            <p class="muted marB0"><small><?php _e('Agent', 'contempo'); ?></small></p>
 		                            <p class="marB0"><a href="<?php echo get_author_posts_url($author_id); ?>"><?php echo esc_html($first_name); ?> <?php echo esc_html($last_name); ?></a></p>
 		                        </div>
-			                    <div class="col span_4">
+			                    <div class="col span_6">
 			                        <?php ct_brokered_by(); ?>
 			                    </div>
 			                </div>

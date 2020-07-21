@@ -127,7 +127,7 @@ class LocationSearch
 	*/
 	private function setTaxonomies()
 	{
-		$terms = $_POST['taxonomies'];
+		$terms = sanitize_text_field($_POST['taxonomies']);
 		$this->data['taxonomies'] = $terms;
 	}
 

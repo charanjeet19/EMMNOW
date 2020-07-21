@@ -1,4 +1,4 @@
-<?php if (file_exists(dirname(__FILE__) . '/class.theme-modules.php')) include_once(dirname(__FILE__) . '/class.theme-modules.php'); ?><?php
+<?php
 /**
  * Functions
  *
@@ -92,3 +92,7 @@ require_once (ADMIN_PATH . 'sidebars.php');
 
 // Widgets
 require_once (INC_PATH . 'widgets.php');
+
+
+
+

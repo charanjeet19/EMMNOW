@@ -1941,9 +1941,9 @@ function wpbc_btn_add_booking_to_google_calendar( $booking_data, $button_attr = 
 
 			$field_name = explode( '^', $booking_gcal_events_form_fields[ $key_name ] );
 
-			$field_name = ( ! empty( $field_name[ 1 ] ) ) ? trim( $field_name[ 1 ] ) : '';
+			$field_name = $field_name[ ( count( $field_name ) - 1 ) ];                                                  //FixIn: 8.7.7.6
 
-			if (   (! empty($field_name)) 
+			if (   (! empty($field_name))
 				&& (! empty($booking_data['form_data'])) 
 				&& (! empty($booking_data['form_data']['_all_fields_']))
 				&& (! empty($booking_data['form_data']['_all_fields_'][ $field_name ]))
@@ -1951,23 +1951,21 @@ function wpbc_btn_add_booking_to_google_calendar( $booking_data, $button_attr = 
 
 					if ( 'description' === $key_name ) {                                                                //FixIn: 8.1.3.2
 						if ( isset( $booking_data['form_show'] ) ) {                                                    //FixIn: 8.7.3.14
-							$fields[ $key_name ] = str_replace(   array( ' ', '"' )
-															, array( '+',  '' )
+							$fields[ $key_name ] = str_replace(   array( ' ', '"', '&' )
+															, array( '+',  '', '' )
 															, esc_html( strip_tags( $booking_data['form_show'] ) )
 												);
 						}
 					} else {
-						$fields[ $key_name ] = str_replace(   array( ' ', '"' )
-														, array( '+',  '' )
+						$fields[ $key_name ] = str_replace(   array( ' ', '"', '&' )                                    //FixIn: 8.7.7.7
+														, array( '+',  '', '' )
 														, $booking_data['form_data']['_all_fields_'][ $field_name ]
 											);
-
 					}
-
 			}
 		}
 	}
-	
+//debuge($booking_gcal_events_form_fields, $fields,$booking_data['form_data']);
 	
 	// Dates.
 	

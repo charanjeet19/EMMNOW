@@ -24,7 +24,8 @@ function mo_openid_show_apps()
                             $checked='';
                         $dir=dirname(dirname(dirname( __FILE__ )));
                         require($dir.'/social_apps/'.$apps.'.php');
-                        $social_app = new $apps();
+                        $mo_appname='mo_'.$apps;
+                        $social_app = new $mo_appname();
                         $blcolor=$social_app->color;
                         ?>
                         <div class="mo-openid-sort-apps-div mo-openid-hover-div-sett" data-provider="<?php echo $apps?>" id="<?php echo $apps?>" style="opacity: <?php if(get_option('mo_openid_'.$apps.'_enable')) echo '1'; else echo '0.6'?>">
@@ -52,6 +53,9 @@ function mo_openid_show_apps()
                 </div>
                 <br/>
             </td>
+            <div>
+                <label style="cursor: auto; margin-left: 3%;" class="mo_openid_note_style">Are you looking for rest API solution to authorized users for your Android or IOS app? <a style="cursor: pointer" onclick="mo_openid_support_form('Rest API requirments ')">Click here</a> and send us your requirments we will help you out.</label>
+            </div>
         </tr>
         <tr>
             <td>
@@ -68,7 +72,8 @@ function mo_openid_show_apps()
                     {
                         $dir=dirname(dirname(dirname( __FILE__ )));
                         include_once($dir.'/social_apps/'.$apps.'.php');
-                        $social_app = new $apps();
+                        $mo_appname='mo_'.$apps;
+                        $social_app = new $mo_appname();
                         $blcolor=$social_app->color;
                         ?>
                         <div class="mo-openid-sort-apps-div mo-openid-hover-div-sett">
@@ -114,7 +119,7 @@ function mo_openid_show_apps()
                 success: function (result) {
                     if (result.status) {
                         if (a.checked == true) {
-                            if (app_name == 'facebook') {
+                            if (app_name == 'facebook' || app_name == 'twitter' || app_name == 'instagram') {
                                 jQuery.ajax({
                                     type: 'POST',
                                     url: '<?php echo admin_url("admin-ajax.php"); ?>',
@@ -146,7 +151,7 @@ function mo_openid_show_apps()
                                             });
                                         } else {
                                             jQuery("#mo_apps_".concat(app_name)).prop('checked', false);
-                                            mo_show_success_error_msg('success','Please set custom app for facebook');
+                                            mo_show_success_error_msg('success','Please set custom app for '.concat(app_name));
                                             jQuery ("#mo_facebook_notice").show();
                                             jQuery( "#mo_register_customer_toggle").hide();
                                             getappsInLine(app_name);
@@ -214,7 +219,7 @@ function mo_openid_show_apps()
                                             });
                                         } else {
                                             jQuery("#mo_apps_".concat(app_name)).prop('checked', false);
-                                            if(app_name=='facebook')
+                                            if(app_name=='facebook' || app_name == 'twitter' || app_name == 'instagram')
                                             {
                                                 jQuery ("#mo_facebook_notice").show();
                                                 jQuery( "#mo_register_customer_toggle").hide();
@@ -334,7 +339,7 @@ function mo_openid_show_apps()
                                     //         '</label>' +
                                     //     '</div>' +
                                     // '</div>'+
-                                    '<div id="mo_facebook_notice" style="overflow: auto; margin-left:25%; margin-right:3%; padding-top:2%"><label style="cursor:auto"><b>Please set custom app for Facebook</b></label></div><hr>'+
+                                    '<div id="mo_facebook_notice" style="overflow: auto; margin-left:25%; margin-right:3%; padding-top:2%"><label style="cursor:auto"><b></b></label></div><hr>'+
                                     '<div><center><h3 style="margin-bottom: 2%">App Settings</h3></center></div>'+
                                     '<div class="mo-openid-app-name" id="custom_app_name_rename" style="width: 100%">'+
                                         '<div id="mo_register_customer_toggle" style="overflow: auto; margin-left:10%; margin-right:3%; padding-top:2%;margin-bottom:2%;">' +
@@ -786,11 +791,11 @@ function mo_openid_show_apps()
 
         jQuery(".mo-openid-sort-apps-open-settings-div").click(function () {
             let app_name = jQuery(this).parents(".mo-openid-sort-apps-div").attr("id");
-            if(app_name=='facebook')
+            if(app_name=='facebook' || app_name == 'twitter' || app_name == 'instagram')
             {
+                jQuery("#mo_facebook_notice").text("Please set custom app for "+app_name.charAt(0).toUpperCase()+app_name.substr(1));
                 jQuery ("#mo_facebook_notice").show();
                 jQuery( "#mo_register_customer_toggle").hide();
-
             }
             else {
                 document.getElementById('mo_openid_ajax_wait_img').style.display = 'block';
@@ -829,7 +834,7 @@ function mo_openid_show_apps()
             jQuery('#mo_openid_cust_app_instructions').show();
             jQuery('#mo_openid_register_new_user').hide();
             jQuery('#mo_openid_register_old_user').hide();
-            if(application_name == 'facebook') {
+            if(application_name == 'facebook' || application_name == 'twitter' || application_name == 'instagram') {
                 jQuery("#mo_set_pre_config_app").hide();
                 jQuery("#mo_ssl_notice").text("SSL certificate is required for "+application_name.charAt(0).toUpperCase()+application_name.substr(1)+" custom app");
                 jQuery("#mo_ssl_notice").show();
@@ -881,6 +886,7 @@ function mo_openid_show_apps()
                             jQuery("#custom_app_perma_inst").hide();
                             for (i = 7; i < ins.length; i++)
                                 jQuery("#custom_app_inst_steps").append('<li>' + ins[i] + '</li>');
+                            jQuery("#custom_app_inst_steps").append('<label class="mo_openid_note_style" style="cursor: auto">If you want to display Social Login icons on your login panel then use <code id=\'1\'>[miniorange_social_login]</code><i style= "width: 11px;height: 9px;padding-left:2px;padding-top:3px" class="mofa mofa-fw mofa-lg mofa-copy mo_copy mo_copytooltip" onclick="copyToClipboard(this, \'#1\', \'#shortcode_url_copy\')"><span id="shortcode_url_copy" class="mo_copytooltiptext">Copy to Clipboard</span></i> to display social icons or <a style="cursor: pointer" onclick="mo_openid_support_form(\'\')">Contact Us</a></label>');
                         }
                         document.getElementById('mo_openid_ajax_wait_img').style.display = 'none';
                         document.getElementById('mo_openid_ajax_wait_fade').style.display = 'none';

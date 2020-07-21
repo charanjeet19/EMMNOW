@@ -63,7 +63,7 @@ class AllLocationsShortcode
 	private function formatInfoWindows()
 	{
 		foreach ($this->locations as $key => $location) :
-			$infowindow = '<div data-result="' . $key . '"><h4>'. $location->title . '</h4><p><a href="' . $location->permalink . '" data-location-id="'. $location->id .'">' . __('View Location', 'wpsimplelocator') . '</a></p></div>';
+			$infowindow = '<div data-result="' . $key . '"><h4>'. $location->title . '</h4><p><a href="' . $location->permalink . '" data-location-id="'. $location->id .'">' . __('View Location', 'simple-locator') . '</a></p></div>';
 			$infowindow = apply_filters('simple_locator_infowindow', $infowindow, $location, $key);
 			$this->locations[$key]->infowindow = $infowindow;
 		endforeach;

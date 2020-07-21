@@ -3,14 +3,14 @@
 /**
  *
  * @link              http://contempographicdesign.com
- * @since             2.6.7
+ * @since             2.7.6
  * @package           CT_Real_Estate_Custom_Posts
  *
  * @wordpress-plugin
  * Plugin Name:       Contempo Real Estate Custom Posts
  * Plugin URI:        http://wordpress.org/contempo-real-estate-custom-posts/
  * Description:       This plugin registers listings, brokerages & testimonials custom post types, along with related custom fields & taxonomies.
- * Version:           2.6.7
+ * Version:           2.7.6
  * Author:            Contempo
  * Author URI:        http://contempographicdesign.com
  * License:           GPL-2.0+
@@ -261,5 +261,101 @@ function ct_show_user_profile_image_column_content($val, $column_name, $user_id)
     return $val;
 }
 add_action('manage_users_custom_column',  'ct_show_user_profile_image_column_content', 10, 3);
+
+/*-----------------------------------------------------------------------------------*/
+/* Notify user of new listing sending then an email */
+/*-----------------------------------------------------------------------------------*/
+
+if(!function_exists('ct_admin_notify_new_listing')) {
+	function ct_admin_notify_new_listing($post_ID, $scity='', $sstate='') {
+		global $ct_options;
+		$ct_enable_front_end_email_notification = isset( $ct_options['ct_enable_front_end_email_notification'] ) ? esc_html( $ct_options['ct_enable_front_end_email_notification'] ) : '';
+		if($ct_enable_front_end_email_notification != 'no') {
+		    $url = get_permalink($post_ID);
+		    $search_city = $scity;
+			$search_state = $sstate;
+			$admin_email = get_option('admin_email');
+			$blogname = get_option('blogname'); 
+					
+			$search_cities = wp_get_post_terms($post_ID, 'city', array("fields" => "names"));
+			$search_city = $search_cities[0];
+			$scity = $search_city;
+				
+			$search_states = wp_get_post_terms($post_ID, 'state', array("fields" => "names"));
+			$search_state = $search_states[0];
+			$sstate = $search_state;
+			
+			$lh_users = get_users(
+				array( 
+					"meta_key" => "city",
+					"meta_value" => $search_city,
+					"fields" => "ID",
+				)
+			);
+
+			foreach($lh_users as $user_id){		
+				$state_user = get_user_meta($user_id, "state", true); 
+				$message = "";
+				
+				if($state_user == $sstate){
+					$user = get_user_by('id',$user_id);
+					$user_meta = get_userdata($user_id);
+					$user_roles=$user_meta->roles;
+
+					if(in_array("subscriber", $user_roles) || in_array("renter", $user_roles) || in_array("tenant", $user_roles) || in_array("buyer", $user_roles)) {
+						$to = $user->user_email;
+					 	$header .= "MIME-Version: 1.0\n";
+						$header .= "Content-Type: text/html; charset=utf-8\n";
+						$header .= 'From: ' . $blogname . ' < ' . $admin_email . ' >';
+						$header .= 'Reply-To: ' . $admin_email;
+						
+						$subject = __('New submission in', 'contempo') . ' ' . $search_city . ', ' . $search_state;
+						
+						$message .= __('Hi!', 'contempo') . ' ' . $user->display_name . "\r\n";
+						$message .= __('We have a new submission in', 'contempo') . ' ' . $search_city . ', ' . $search_state . "\r\n";
+						$message .= __('Check it out', 'contempo') . ' ' . $url; 
+									
+						$mail = wp_mail( $to, $subject, $message, $headers );
+					}
+				}
+			}
+		}
+	}
+}
+add_action('publish_listings', 'ct_admin_notify_new_listing');
+
+/*-----------------------------------------------------------------------------------*/
+/* Ajax Submit - Agent Contact Modal - TEST */
+/*-----------------------------------------------------------------------------------*/
+
+if(!function_exists('ct_ajax_submit_agent')) {
+	function ct_ajax_submit_agent() {
+		$email = $_POST['email'];
+		$name = $_POST['name'];
+		$message = $_POST['message'];
+		$youremail = $_POST['ctyouremail'];
+		$subject = $_POST['ctsubject'];
+		$ctphone = $_POST['ctphone'];
+
+		$isValidate = true;
+
+		if($isValidate == true){
+			$to = "$youremail";
+			$subject = "$subject";
+			$msg = "$message" . "\n\n" .
+			"Phone: $ctphone" . "\n" .
+			"Email: $email" . "\n";
+			$headers = "From: $name <$email>" . "\r\n" .
+				"Reply-To: $email" . "\r\n" .
+				"X-Mailer: PHP/" . phpversion();
+			mail ($to, $subject, $msg, "From: $name <$email>");
+			echo "true";
+		} else {
+			echo '{"jsonValidateReturn":'.json_encode($arrayError).'}';
+		}
+
+		//echo '<script>jQuery( document ).ready(function() { console.log("ajax fired"); });</script>';
+	}
+}
 
 ?>

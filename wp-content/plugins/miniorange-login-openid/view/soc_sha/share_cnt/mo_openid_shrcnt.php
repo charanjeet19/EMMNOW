@@ -14,7 +14,8 @@ function mo_openid_share_cnt(){
                 <tr>
                     <td>
 
-                        <p style="font-size: 15px;"><?php echo mo_sl('Share counts are supported for Facebook, Vkontakte, Stumble Upon and Pinterest');?>.</p>
+                        <p class="mo_openid_note_style" style="font-size: 15px;"><?php echo mo_sl('Share counts are supported for <b>Facebook</b>, <b>Vkontakte</b>, <b>Stumble Upon</b>, <b>LinkedIn</b>, <b>Buffer</b> and <b>Pinterest</b> If you are Enabling share counts then it will give you the exact counts of share that is done by that particular social media.');?><br><br><?php echo mo_sl('<b>Buffer</b> and <b>LinkedIn</b> are supported in Paid Version');?>.<a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>.</p>
+
                         <br>
                         <label class="mo_openid_checkbox_container"> <b style="font-size: 14px;"><?php echo mo_sl('Enable share counts');?></b>
                             <input type="checkbox" id="share_count" name="mo_openid_share_count" value="1" <?php checked(get_option('mo_openid_share_count') == 1); ?> />

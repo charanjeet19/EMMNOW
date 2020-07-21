@@ -117,18 +117,21 @@ function mo_openid_display_share_opt(){
                     </div>
                         <br>
 
-                        <label class="mo_openid_checkbox_container" "> <?php echo mo_sl(' WooCommerce Individual Product Page(Top)');?>
-                            <input type="checkbox" id="mo_apps_wc_sp_page_top"  name="mo_share_options_wc_sp_summary_top"  value="1"  <?php checked( get_option('mo_share_options_wc_sp_summary_top') == 1 );?>>
+                        <label class="mo_openid_checkbox_container_disable "> <?php echo mo_sl(' WooCommerce Individual Product Page(Top)');?> <a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
+                            <input type="checkbox" id="mo_apps_wc_sp_page_top"  name="mo_share_options_wc_sp_summary_top"  value="1"  >
                             <span class="mo_openid_checkbox_checkmark "></span>
                         </label>
-
+                        <label class="mo_openid_checkbox_container_disable "> <?php echo mo_sl('Below WooCommerce Product');?> <a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
+                            <input type="checkbox" id="mo_apps_wc_product"  name="mo_share_options_wc_product"  value="1" >
+                        <span class="mo_openid_checkbox_checkmark "></span>
+                        </label>
 
                     </div>
                     <div id="upright" style="font-size: 14px;">
                         <br>
 
-                        <label class="mo_openid_checkbox_container"> <?php echo mo_sl('WooCommerce Individual Product Page');?>
-                            <input type="checkbox" id="mo_apps_wc_sp_page"  name="mo_share_options_wc_sp_summary"  value="1"  <?php checked( get_option('mo_share_options_wc_sp_summary') == 1 );?>>
+                        <label class="mo_openid_checkbox_container_disable"> <?php echo mo_sl('WooCommerce Individual Product Page');?> <a style="left: 1%; position: relative; text-decoration: none" class="mo-openid-premium" href="<?php echo add_query_arg( array('tab' => 'licensing_plans'), $_SERVER['REQUEST_URI'] ); ?>"><?php echo mo_sl('PRO');?></a>
+                            <input type="checkbox" id="mo_apps_wc_sp_page"  name="mo_share_options_wc_sp_summary"  value="1">
                             <span class="mo_openid_checkbox_checkmark"></span>
                         </label>
 

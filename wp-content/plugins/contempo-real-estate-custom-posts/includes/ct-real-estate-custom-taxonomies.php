@@ -772,9 +772,35 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 				'rewrite' => array( 'slug' => 'building' ),
 			));
 
+		} elseif($ct_community_neighborhood_or_district == 'complex') {
+
+			$complexlabels = array(
+				'name' => __( 'Complex', 'contempo' ),
+				'singular_name' => __( 'Complex', 'contempo' ),
+				'search_items' =>  __( 'Search Complexes', 'contempo' ),
+				'popular_items' => __( 'Popular Complexes', 'contempo' ),
+				'all_items' => __( 'All Complexes', 'contempo' ),
+				'parent_item' => null,
+				'parent_item_colon' => null,
+				'edit_item' => __( 'Edit Complex', 'contempo' ),
+				'update_item' => __( 'Update Complex', 'contempo' ),
+				'add_new_item' => __( 'Add New Complex', 'contempo' ),
+				'new_item_name' => __( 'New Complex', 'contempo' ),
+				'separate_items_with_commas' => __( 'Separate Complexes with commas', 'contempo' ),
+				'add_or_remove_items' => __( 'Add or remove Complexes', 'contempo' ),
+				'choose_from_most_used' => __( 'Choose from the most used Complexes', 'contempo' )
+			);
+			register_taxonomy( 'community', 'listings', array(
+				'hierarchical' => false,
+				'labels' => $complexlabels,
+				'show_ui' => true,
+				'query_var' => true,
+				'rewrite' => array( 'slug' => 'complex' ),
+			));
+
 		} elseif($ct_community_neighborhood_or_district == 'borough') {
 
-			$buildinglabels = array(
+			$boroughlabels = array(
 				'name' => __( 'Borough', 'contempo' ),
 				'singular_name' => __( 'Borough', 'contempo' ),
 				'search_items' =>  __( 'Search Boroughs', 'contempo' ),
@@ -792,7 +818,7 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 			);
 			register_taxonomy( 'community', 'listings', array(
 				'hierarchical' => false,
-				'labels' => $buildinglabels,
+				'labels' => $boroughlabels,
 				'show_ui' => true,
 				'query_var' => true,
 				'rewrite' => array( 'slug' => 'building' ),
@@ -800,7 +826,7 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 
 		} elseif($ct_community_neighborhood_or_district == 'sector') {
 
-			$buildinglabels = array(
+			$sectorlabels = array(
 				'name' => __( 'Sector', 'contempo' ),
 				'singular_name' => __( 'Sector', 'contempo' ),
 				'search_items' =>  __( 'Search Sectors', 'contempo' ),
@@ -818,7 +844,7 @@ if ( ! function_exists( 'ct_realestate_taxonomies' ) ) {
 			);
 			register_taxonomy( 'community', 'listings', array(
 				'hierarchical' => false,
-				'labels' => $buildinglabels,
+				'labels' => $sectorlabels,
 				'show_ui' => true,
 				'query_var' => true,
 				'rewrite' => array( 'slug' => 'sector' ),

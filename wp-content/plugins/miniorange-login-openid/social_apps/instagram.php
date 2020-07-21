@@ -1,7 +1,7 @@
 <?php
 
 
-class instagram
+class mo_instagram
 {
     public $color="#517FA6";
     public $scope="user_profile,user_media";

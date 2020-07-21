@@ -158,10 +158,10 @@ function wpbc_load_translation(){
     
     //$locale = 'fr_FR'; wpbc_load_locale( $locale ); 
     
-    if ( ! wpbc_load_locale() ) { 
-        wpbc_load_locale('en_US');         
+    if ( ! wpbc_load_locale() ) {
+        wpbc_load_locale('en_US');
     }
-    
+
     $locale = wpbc_get_booking_locale();
 }
 
@@ -196,7 +196,7 @@ function wpbc_load_locale( $locale = '' ) {
 
     if ( empty( $locale ) ) 
         $locale = wpbc_get_booking_locale();
-//debuge($locale);    
+//debuge($locale);
     if ( ! empty( $locale ) ) {
 
         $domain = 'booking'; 
@@ -206,7 +206,13 @@ function wpbc_load_locale( $locale = '' ) {
 			// we have long locale like en_US,  get  only 2 firstletters,  for general  locale,  like 'en'
 			$mofile_local_short = WPBC_PLUGIN_DIR  . '/languages/' . $domain . '-' . substr( $locale, 0 , 2 ) . '.mo';
 		}
-		
+	    //FixIn: 8.7.7.1
+		// Load from General folder  /wp-content/languages/plugin/plugin-name-xx_XX.mo
+        $mofile_general = WP_CONTENT_DIR. '/languages/plugin/' . $domain . '-' . $locale . '.mo';
+		if ( file_exists( $mofile_general ) ) {
+			return load_textdomain( $domain, $mofile_general );
+		}
+
 //debuge( $mofile );		
         if ( file_exists( $mofile ) ) {
                                                                             
@@ -231,9 +237,14 @@ function wpbc_get_booking_locale() {
 
 	// Exception for Polylang plugin. Its will force to load locale of Polylang plugin.
 	if( function_exists( 'pll_current_language' ) ) {                                                                   //FixIn: 8.1.2.5
-		if ( version_compare( POLYLANG_VERSION, '2.6.5', '<' ) ) {                                                      //FixIn: 8.7.1.3
+		if (
+			   ( version_compare( POLYLANG_VERSION, '2.6.5', '<' ) )                                                    //FixIn: 8.7.1.3
+			|| ( version_compare( POLYLANG_VERSION, '2.7.1', '>' ) )                                                    //FixIn: 8.7.7.11
+		) {
 			$locale = pll_current_language( 'locale' );
-			return $locale;
+			if ( ! empty( $locale ) ) {                                                                                 //FixIn: 8.7.7.11
+				return $locale;
+			}
 		}
 	}
 
@@ -247,7 +258,7 @@ function wpbc_get_booking_locale() {
 		$locale = get_locale();
 
 	define( 'WPBC_LOCALE_RELOAD', $locale );
-    
+
     return $locale;
 }
 

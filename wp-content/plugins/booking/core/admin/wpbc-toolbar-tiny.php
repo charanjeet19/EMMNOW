@@ -1848,16 +1848,16 @@ Parameters for possible usage of shortcode:
                 jQuery( "#wpbc_bookingtimeline_view_days_num option[value=7]" ).prop( "disabled", true );
                 jQuery( "#wpbc_bookingtimeline_view_days_num option[value=60]" ).prop( "disabled", true );                        
 //                jQuery('#bookingtimeline_show_link').on( 'click', function(){                                 
-//                                jQuery('#bookingtimeline_show_link').slideToggle(200);
-//                                jQuery('#bookingtimeline_hide_link').animate( {opacity: 1}, 200 ).slideToggle(200);     
-//                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').slideToggle(200);
-//                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+//                                jQuery('#bookingtimeline_show_link').toggle(200);
+//                                jQuery('#bookingtimeline_hide_link').animate( {opacity: 1}, 200 ).toggle(200);
+//                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').toggle(200);
+//                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).toggle(200);
 //                            } );
 //                jQuery('#bookingtimeline_hide_link').on( 'click', function(){    
-//                                jQuery('#bookingtimeline_hide_link').slideToggle(200);                            
-//                                jQuery('#bookingtimeline_show_link').animate( {opacity: 1}, 200 ).slideToggle(200);                        
-//                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').slideToggle(200);
-//                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+//                                jQuery('#bookingtimeline_hide_link').toggle(200);
+//                                jQuery('#bookingtimeline_show_link').animate( {opacity: 1}, 200 ).toggle(200);
+//                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').toggle(200);
+//                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).toggle(200);
 //                            } );  
 //FixIn: 7.0.1.17
                 jQuery( '#wpbc_bookingtimeline_type,#wpbc_bookingtimeline_view_days_num,#wpbc_bookingtimeline_header_title,#wpbc_bookingtimeline_scroll_start_date_active,#wpbc_bookingtimeline_scroll_month,#wpbc_bookingtimeline_scroll_day,#wpbc_bookingtimeline_limit_hours_start_time,#wpbc_bookingtimeline_limit_hours_end_time').on( 'change', function(){      // Booking Resource Selectbox Change value
@@ -1874,16 +1874,16 @@ Parameters for possible usage of shortcode:
                 ////////////////////////////////////////////////////////////////
                 <?php $shortcode_section_key = 'booking'; ?>
                 jQuery('#booking_show_link').on( 'click', function(){                                 
-                                jQuery('#booking_show_link').slideToggle(200);
-                                jQuery('#booking_hide_link').animate( {opacity: 1}, 200 ).slideToggle(200);     
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#booking_show_link').toggle(200);
+                                jQuery('#booking_hide_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );
                 jQuery('#booking_hide_link').on( 'click', function(){    
-                                jQuery('#booking_hide_link').slideToggle(200);                            
-                                jQuery('#booking_show_link').animate( {opacity: 1}, 200 ).slideToggle(200);                        
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#booking_hide_link').toggle(200);
+                                jQuery('#booking_show_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );   
                 jQuery( '#wpbc_booking_type,#wpbc_booking_form_type,#wpbc_booking_nummonths,#wpbc_booking_startmonth_active,#wpbc_booking_options,#wpbc_booking_aggregate').on( 'change', function(){      // Booking Resource Selectbox Change value
                     wpbc_set_shortcode();
@@ -1899,16 +1899,16 @@ Parameters for possible usage of shortcode:
                 ////////////////////////////////////////////////////////////////
                 <?php $shortcode_section_key = 'bookingcalendar'; ?>
                 jQuery('#bookingcalendar_show_link').on( 'click', function(){                                 
-                                jQuery('#bookingcalendar_show_link').slideToggle(200);
-                                jQuery('#bookingcalendar_hide_link').animate( {opacity: 1}, 200 ).slideToggle(200);     
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#bookingcalendar_show_link').toggle(200);
+                                jQuery('#bookingcalendar_hide_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );
                 jQuery('#bookingcalendar_hide_link').on( 'click', function(){    
-                                jQuery('#bookingcalendar_hide_link').slideToggle(200);                            
-                                jQuery('#bookingcalendar_show_link').animate( {opacity: 1}, 200 ).slideToggle(200);                        
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#bookingcalendar_hide_link').toggle(200);
+                                jQuery('#bookingcalendar_show_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );   
                 jQuery( '#wpbc_bookingcalendar_type,#wpbc_bookingcalendar_nummonths,#wpbc_bookingcalendar_startmonth_active,#wpbc_bookingcalendar_options,#wpbc_bookingcalendar_aggregate').on( 'change', function(){      // Booking Resource Selectbox Change value
                     wpbc_set_shortcode();
@@ -1924,16 +1924,16 @@ Parameters for possible usage of shortcode:
                 ////////////////////////////////////////////////////////////////
                 <?php $shortcode_section_key = 'bookingselect'; ?>
                 jQuery('#bookingselect_show_link').on( 'click', function(){                                 
-                                jQuery('#bookingselect_show_link').slideToggle(200);
-                                jQuery('#bookingselect_hide_link').animate( {opacity: 1}, 200 ).slideToggle(200);     
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#bookingselect_show_link').toggle(200);
+                                jQuery('#bookingselect_hide_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );
                 jQuery('#bookingselect_hide_link').on( 'click', function(){    
-                                jQuery('#bookingselect_hide_link').slideToggle(200);                            
-                                jQuery('#bookingselect_show_link').animate( {opacity: 1}, 200 ).slideToggle(200);                        
-                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').slideToggle(200);
-                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).slideToggle(200);
+                                jQuery('#bookingselect_hide_link').toggle(200);
+                                jQuery('#bookingselect_show_link').animate( {opacity: 1}, 200 ).toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_advanced_section').toggle(200);
+                                jQuery('.<?php echo $shortcode_section_key; ?>_standard_section').animate( {opacity: 1}, 200 ).toggle(200);
                             } );   
                 jQuery( '#wpbc_bookingselect_type,#wpbc_bookingselect_selected_type,#wpbc_bookingselect_form_type,#wpbc_bookingselect_label,#wpbc_bookingselect_first_option_title,#wpbc_bookingselect_nummonths,#wpbc_bookingselect_startmonth_active,#wpbc_bookingselect_options').on( 'change', function(){      // Booking Resource Selectbox Change value
                     wpbc_set_shortcode();

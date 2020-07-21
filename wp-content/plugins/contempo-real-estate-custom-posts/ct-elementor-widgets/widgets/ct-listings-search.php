@@ -206,11 +206,31 @@ class CT_Listings_Search extends Widget_Base {
 		$ct_mls = isset( $_GET['ct_mls']) ? $_GET['ct_mls'] : '';
 		$ct_rental_guests = isset( $_GET['ct_rental_guests']) ? $_GET['ct_rental_guests'] : '';
 
+		/*-----------------------------------------------------------------------------------*/
+		/* Search SVG Icon - Muted */
+		/*-----------------------------------------------------------------------------------*/
+
+		if(!function_exists('ct_search_svg_muted')) {
+			function ct_search_svg_muted() {
+				$ct_search_svg_muted = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20"> <path d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z" fill="#878c92"></path> </svg>';
+
+				echo $ct_search_svg_muted;
+			}
+		}
+
 		?>
 
 		<style>
 			.elementor-widget-ct-listings-search #advanced_search { background: none; border-radius: 0;}
+				.elementor-widget-ct-listings-search #advanced_search #keyword-wrap svg { position: absolute; top: 12px; left: 15px;}
+					.elementor-widget-ct-listings-search #advanced_search #keyword-wrap #ct_keyword { padding-left: 50px;}
+						.elementor-widget-ct-listings-search .large-size #ct_keyword { padding-left: 60px !important;}
+						.elementor-widget-ct-listings-search #advanced_search.search-icon-btn #keyword-wrap #ct_keyword { padding-left: 18px;}
+				.elementor-widget-ct-listings-search #advanced_search button svg { position: relative; top: 5px;}
 				.elementor-widget-ct-listings-search #advanced_search.header-search #submit { width: 100%; padding-right: 0; padding-left: 0; text-align: center;}
+					.elementor-widget-ct-listings-search .large-size button { height: 62px; line-height: 62px;}
+						.elementor-widget-ct-listings-search .large-size button svg {}
+							.elementor-widget-ct-listings-search .large-size.search-icon-btn button { width: 62px; padding: 0;}
 			@media only screen and (max-width: 767px) {
 				.elementor-widget-ct-listings-search #advanced_search .col { width: 100% !important; margin-left: 0 !important;}
 			}
@@ -220,10 +240,10 @@ class CT_Listings_Search extends Widget_Base {
 		<?php
 			if($settings['display_type'] == 'single') { ?>
 
-				<div id="suggested-search" class="col span_10 first">
+				<div id="suggested-search" class="col <?php if($settings['search_button_style'] == 'icon') { echo 'span_11'; } else { echo 'span_10'; } ?> first">
 	            	<div id="keyword-wrap">	
 	            		<?php if($settings['search_button_style'] != 'icon') { ?>
-		            		<i class="fas fa-search"></i>	
+	            			<?php ct_search_svg_muted(); ?>
 	            		<?php } ?>			
 		                <label for="ct_keyword"><?php _e('Keyword', 'contempo'); ?></label>
 		                <input type="text" id="ct_keyword" class="number hero_keyword_search <?php if($settings['search_button_style'] == 'icon') { echo 'hero_keyword_search_no_icon'; } ?>" name="ct_keyword" size="8" placeholder="<?php esc_html_e('Enter a Street, City, State, Zip or keyword', 'contempo'); ?>" autocomplete="off" />
@@ -269,9 +289,13 @@ class CT_Listings_Search extends Widget_Base {
 
 				<input type="hidden" name="search-listings" value="true" />
 
-	            <div class="col span_2 <?php if($settings['search_button_style'] == 'icon') { echo 'search-icon-btn'; } ?>">
+	            <div class="col <?php if($settings['search_button_style'] == 'icon') { echo 'span_1 search-icon-btn'; } else { echo 'span_2'; } ?>">
 	            	<?php if($settings['search_button_style'] == 'icon') { ?>
-	            		<input id="submit" class="btn left" style="font-family: 'Font Awesome 5 Free' !important; font-weight: 900 !important;" type="submit" value="&#xf002;" />	
+	            		<?php if(function_exists('ct_search_svg')) { ?>
+            				<button class="left"><?php ct_search_svg(); ?></button>
+            			<?php } else { ?>
+            				<input id="submit" class="btn left" style="font-family: 'Font Awesome 5 Free' !important; font-weight: 900 !important;" type="submit" value="&#xf002;" />
+            			<?php } ?>
 	            	<?php } else { ?>
 						<input id="submit" class="btn left" type="submit" value="<?php _e('Search', 'contempo'); ?>" />	           
 					<?php } ?>
@@ -284,7 +308,7 @@ class CT_Listings_Search extends Widget_Base {
 				        switch($field) {						
 						// Type            
 				        case 'header_type' : ?>
-				            <div class="col span_2">
+				            <div id="property_type" class="col span_2">
 				                <label for="ct_type"><?php _e('Type', 'contempo'); ?></label>
 				                <?php ct_search_form_select('property_type'); ?>
 				            </div>

@@ -3,8 +3,8 @@ Contributors: wpshopmart
 Donate link: https://www.wpshopmart.com
 Tags: Accordion, accordions, accordion plugin, FAQ,  collapse, accordion plugin jquery, accordions plugin wordpress, accordions shortcode, accordion shortcode, accordions Widget, accordion Widget, jQuery accordions, Responsive accordion, Responsive accordions, collapsable content,  collapsible, display, expand, expandable, expandable content, hidden, hide, javascript, jquery, toggle, css accordion, css3 , bootstrap, bootstrap accordion, bootstrap collapse, wordpress accordion, widget, shortcode, responsive, plugin, wordpress accordion plugin  
 Requires at least: 4.9
-Tested up to: 5.4.1
-Stable tag: 2.1.8
+Tested up to: 5.4.2
+Stable tag: 2.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,7 +140,32 @@ Please contribute to translate our plugin.  Contact at `wpshopmart(at)gmail(dot)
 
 == Frequently Asked Questions ==
 
-Please use WordPress support forum to ask any query regarding any issue.
+= How do i displayed my Accordion FAQ on page?  =
+
+Just copy your FAQ accordion shortcode [WPSM_AC id=xx] and then paste it on your page. 
+
+= Doesn't work on my website ?  =
+
+May be possible it's conflict with other plugin so try to deactivate other plugin one by one and then check which one is conflict after then contact us here [our support forum](https://wordpress.org/support/plugin/responsive-accordion-and-collapse/). 
+
+= Is this plugin responsive ?  =
+
+yes, it's based on bootstrap.  Accordion FAQ content are compatible with all media devices.  
+
+= Can i add accordion in widget ?  =
+
+Just open your widget menu then add “Text widget” , now paste your accordion shortcode [WPSM_AC id=xx] (here xx your shortcode id) in text widget.
+
+= Can i add my own custom css on faq ?  =
+
+Yes you can add your own custom css, there custom css field is available so you can add css code there.
+
+= I Really lIke your effort on this plugin and now i want to rate it ! =
+
+We love your feedback please submit your review here [pluign review](https://wordpress.org/support/plugin/responsive-accordion-and-collapse/reviews/) 
+
+
+
 
 == Screenshots ==
 
@@ -157,6 +182,11 @@ Please use WordPress support forum to ask any query regarding any issue.
 11. accordion styles 2
 
 == Changelog ==
+
+= 2.1.9 =
+
+* minor issue resolved
+* Compatible with WordPress 5.4.2 version.
 
 = 2.1.8 =
 

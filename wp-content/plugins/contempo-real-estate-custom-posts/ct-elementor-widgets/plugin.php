@@ -62,6 +62,8 @@ class Plugin {
 		require_once( __DIR__ . '/widgets/ct-listings-grid.php' );
 		require_once( __DIR__ . '/widgets/ct-listings-list.php' );
 		require_once( __DIR__ . '/widgets/ct-listings-minimal-grid.php' );
+		require_once( __DIR__ . '/widgets/ct-listings-carousel.php' );
+		require_once( __DIR__ . '/widgets/ct-listings-table.php' );
 		require_once( __DIR__ . '/widgets/ct-listings-map.php' );
 		require_once( __DIR__ . '/widgets/ct-modern-four-item-grid.php' );
 		require_once( __DIR__ . '/widgets/ct-modern-item-grid.php' );
@@ -87,6 +89,8 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_Grid() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_List() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_Minimal_Grid() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_Carousel() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_Table() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Listings_Map() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Agent() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\CT_Three_Item_Grid() );

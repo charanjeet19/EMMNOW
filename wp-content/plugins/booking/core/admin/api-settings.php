@@ -1288,8 +1288,8 @@ class  WPBC_Settings_API_General extends WPBC_Settings_API {
         
         // Click  on Show Advanced JavaScript section  link
         $js_script .= " jQuery('#wpbc_show_advanced_section_link_show').on( 'click', function(){                                 
-                            jQuery('#wpbc_show_advanced_section_link_show').slideToggle(200);                            
-                            jQuery('#wpbc_show_advanced_section_link_hide').animate( {opacity: 1}, 200 ).slideToggle(200);     
+                            jQuery('#wpbc_show_advanced_section_link_show').toggle(200);                            
+                            jQuery('#wpbc_show_advanced_section_link_hide').animate( {opacity: 1}, 200 ).toggle(200);     
                             jQuery('.wpbc_advanced_js_loading_settings').removeClass('hidden_items'); 
                             
                             if ( ! jQuery('#set_gen_booking_is_load_js_css_on_specific_pages').is(':checked') ) {   
@@ -1297,8 +1297,8 @@ class  WPBC_Settings_API_General extends WPBC_Settings_API {
                             }
                         } ); ";   
         $js_script .= " jQuery('#wpbc_show_advanced_section_link_hide').on( 'click', function(){    
-                            jQuery('#wpbc_show_advanced_section_link_hide').slideToggle(200);                            
-                            jQuery('#wpbc_show_advanced_section_link_show').animate( {opacity: 1}, 200 ).slideToggle(200);                        
+                            jQuery('#wpbc_show_advanced_section_link_hide').toggle(200);                            
+                            jQuery('#wpbc_show_advanced_section_link_show').animate( {opacity: 1}, 200 ).toggle(200);                        
                             jQuery('.wpbc_advanced_js_loading_settings').addClass('hidden_items'); 
                         } ); ";   
         // Click on "is_not_load_bs_script_in_client"
@@ -1336,13 +1336,13 @@ class  WPBC_Settings_API_General extends WPBC_Settings_API {
         
         // Click  on Powered by  links
         $js_script .= " jQuery('#wpbc_powered_by_link_show').on( 'click', function(){                                 
-                            jQuery('#wpbc_powered_by_link_show').slideToggle(200);                            
-                            jQuery('#wpbc_powered_by_link_hide').animate( {opacity: 1}, 200 ).slideToggle(200);  
+                            jQuery('#wpbc_powered_by_link_show').toggle(200);                            
+                            jQuery('#wpbc_powered_by_link_hide').animate( {opacity: 1}, 200 ).toggle(200);  
                             jQuery('.wpbc_is_show_powered_by_notice').removeClass('hidden_items');                             
                         } ); ";   
         $js_script .= " jQuery('#wpbc_powered_by_link_hide').on( 'click', function(){    
-                            jQuery('#wpbc_powered_by_link_hide').slideToggle(200);                            
-                            jQuery('#wpbc_powered_by_link_show').animate( {opacity: 1}, 200 ).slideToggle(200);   
+                            jQuery('#wpbc_powered_by_link_hide').toggle(200);                            
+                            jQuery('#wpbc_powered_by_link_show').animate( {opacity: 1}, 200 ).toggle(200);   
                             jQuery('.wpbc_is_show_powered_by_notice').addClass('hidden_items'); 
                         } ); ";   
 

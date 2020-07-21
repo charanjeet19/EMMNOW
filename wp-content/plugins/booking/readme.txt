@@ -5,7 +5,7 @@ Tags: booking calendar, booking system, availability calendar, events calendar, 
 Requires at least: 4.0
 Requires PHP: 5.2.4
 Tested up to: 5.4
-Stable tag: 8.7.6
+Stable tag: 8.7.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -170,32 +170,32 @@ Please see [FAQ](https://wpbookingcalendar.com/faq/).
 - English
 - Dutch [99% Completed]
 - German [99% Completed]
+- Polish [99% Completed]
 - Swedish [99% Completed]
 - French [98% Completed]
 - Slovenian [98% Completed]
 - Brazilian Portuguese [99% Completed]
 - Hungarian [98% Completed]
-- Spanish [98% Completed]
+- Spanish [97% Completed]
 - Romanian [97% Completed]
-- Italian [96% Completed]
+- Italian [95% Completed]
 - Finnish [95% Completed]
 - Danish [93% Completed]
 - Greek [93% Completed]
 - Bulgarian [93% Completed]
-- Polish [93% Completed]
 - Turkish [93% Completed]
 - Chinese (Taiwan) [91% Completed]
 - Russian [89% Completed]
-- Portugal [89% Completed]
+- Portugal [88% Completed]
 - Galician (Spanish) [88% Completed]
 - Thai [88% Completed]
 - Norwegian [86% Completed]
-- Hebrew [86% Completed]
+- Hebrew [85% Completed]
 - Ukrainian [85% Completed]
 - Chinese [85% Completed]
 - Czech [72% Completed]
 - Slovak [72% Completed]
-- Croatian [73% Completed]
+- Croatian [72% Completed]
 - Catalan [72% Completed]
 - Arabic [72% Completed]
 - Belorussian [9% Completed]
@@ -227,6 +227,29 @@ Please see [Video Guides](https://wpbookingcalendar.com/help/).
 13. **Time Slots**. Simple configuration of **time slots** selection in booking form.
 
 == Changelog ==
+= 8.7.7 =
+- Changes in **all** versions:
+	* **Translation** Dutch translation [99% completed] by Boris Hoekmeijer.
+	* **Translation** Polish translation [99% completed] by Rafał Drzał.
+	* **Translation** German translation [99% completed] by Andreas Wellmann.
+	* **Improvement** Load translation (if exist) from  the general  plugins folder firstly: /wp-content/languages/plugin/booking-xx_XX.mo (8.7.7.1)
+	* **Improvement** Replaced usage of Bootstrap slideToggle to jQuery toggle function - for ability to  show some sections, if bootstrap library deactivated. (8.7.7.9)
+	* **Fix**.  Warning: preg_match(): Compilation failed: invalid range in character class for emails  (8.7.7.2)
+	* **Fix**.  Issue of not showing captcha in some servers with Apache 2.4 or newer versions. (8.7.7.5)
+	* **Fix**.  Issue of adding cutted booking details,  while clicking on "Add to Google Calendar button", if in booking details was used & symbols (8.7.7.7)
+	* **Fix**.  Issue of changing locale in Polylang plugin 2.7.2 or newer (8.7.7.11)
+	* **Fix**.  Issue of showing incorrectly short day names in Timeline in non English languages (8.7.7.14)
+	* **Fix**.  Issue of sometimes hidding theme menus in admin panel, if the Booking Calendar menu also showing at the top (8.7.7.16)
+	* **Under hood** New function wpbc_get_form_fields_free(); for booking form  fields in Booking Calendar Free version. (8.7.7.3)
+	* **Under hood** New support for 'email-reminders' integration. Ability to  use function wpbc_api_get_bookings_arr with  parameter wh_booking_id like '>10'  or '<100' (8.7.7.10)
+- Changes in **Personal / Business Small / Business Medium / Business Large / MultiUser** versions:
+	* **New**. Ability to define PayPal tax fee payment (only for PayPal payment system) in percents at the Booking > Settings > Payment > PayPal page (8.7.7.12) *(Business Small/Medium/Large, MultiUser)*
+	* **New**. Form template for showing booking form fields in 2 columns (8.7.7.15) *(Business Small/Medium/Large, MultiUser)*
+	* **Improvement** Show all booking resources (instead of default resource), in timeline shortcode if was skipped 'type' parameter or value of this parameter  is empty (8.7.7.4)  *(Personal, Business Small/Medium/Large, MultiUser)*
+	* **Fix**.  Issue of adding empty  booking details,  while clicking on "Add to Google Calendar button",  if was assigned fields from Custom  booking form at  Booking > Settings > Sync > "General" page (8.7.7.6) *(Business Medium/Large, MultiUser)*
+	* **Fix**.  Issue of ability to  scroll  to  "step #1",  while using "Wizard form  template",  and some required fields was not filled at "step #2" (8.7.7.8)  *(Personal, Business Small/Medium/Large, MultiUser)*
+	* **Fix**.  Issue of not showing the correct color of payment status relative to using different languages (other than  English) in the system.
+
 = 8.7.6 =
 - Changes in **all** versions:
 	* **Support** WordPress 5.4 - Fix compatibility with  new Blocks editor in Gutenberg editor,  during inserting Booking Calendar shortcodes into the posts or pages (8.7.6.11)
@@ -257,7 +280,7 @@ Please see [Video Guides](https://wpbookingcalendar.com/help/).
 	* **Translation** Dutch translation [100% completed].
 	* **Fix**. Error at WAMP server of not ability to activate the Booking Calendar plugin. Server can not load large translation file and show page "This site cant be reached". (With php 7.2 or newer) (8.7.3.6)
 	* **Fix**. Issue of Daylight Saving Time - in some systems after ~ 29 of March, system generate minus several hours which  show incorrect  selected dates (8.7.3.9)
-	* **Fix**. Issue of "Bad Reqest 400" during clicking "Add to Google Calendar" button  in Booking Listing page in some browsers  (8.7.3.10)
+	* **Fix**. Issue of "Bad Request 400" during clicking "Add to Google Calendar" button  in Booking Listing page in some browsers  (8.7.3.10)
 	* **Fix**. Issue of showing warning  "Undefined index" at line 1955 of wpbc-toolbar.php file (8.7.3.14)
 	* **Fix**. Issue of showing dates in incorrect language in hints,  while using some translation  plugins,  like WPML (8.7.3.15)
 	* **Fix**. Gutenberg editor. Issue of showing warning "A future version of React will block javascript...". Replaced href="javascript:void(0)" to href="#!" (8.7.3.17)
