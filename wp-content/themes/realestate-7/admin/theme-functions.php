@@ -1059,7 +1059,7 @@ if(!function_exists('ct_init_scripts')) {
 		}
 
 		if(!is_page_template('template-idx.php') || !is_page_template('template-idx-full-width.php')) {
-	        wp_enqueue_script('ctNiceSelect', get_template_directory_uri() . '/js/jquery.nice-select.min.js', array('jquery'), '1.0', false);
+	        wp_enqueue_script('ctNiceSelect', get_template_directory_uri() . '/js/jquery.nice-select.min.js', array('jquery'), '2.0', false);
 	        wp_enqueue_style('ctNiceSelect', get_template_directory_uri() . '/css/nice-select.css', '', '', 'screen, projection');
 	        wp_enqueue_script('ctSelect', get_template_directory_uri() . '/js/ct.select.js', array('jquery'), '1.0', false);
 		}
@@ -4386,7 +4386,7 @@ if(!function_exists('ct_login_form_fields')) {
 					do_action('wordpress_social_login');
 				}
 			?>
-			<p class="marB0"><small><a class="muted ct-lost-password" href="#" title="Lost your password?"><?php _e('Lost your password?', 'contempo'); ?></a></small></p>
+			<p class="marB0"><small><a class="muted ct-lost-passwordcst" href="<?php echo home_url();?>/my-account/lost-password/" title="Lost your password?"><?php _e('Lost your password?', 'contempo'); ?></a></small></p>
 		<?php
 		return ob_get_clean();
 	}

@@ -14,8 +14,8 @@ jQuery.noConflict();
 		/* Add Custom Select */
 		/*-----------------------------------------------------------------------------------*/
 		
-		jQuery('select').niceSelect();
-		jQuery('select').niceSelect('update');
+		jQuery('1select').niceSelect();
+		jQuery('1select').niceSelect('update');
 		
 	});
 	

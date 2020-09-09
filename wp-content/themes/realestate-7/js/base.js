@@ -56,9 +56,9 @@ function manageFeaturedTags() {
 		console.log('login error div not shown');
 		$('#login-register-progress').css("display","inline-block");
 		$("#login-register-progress").delay(1700).fadeOut(300);
-		setTimeout(function() {
+		/* setTimeout(function() {
 		    location.reload();
-		}, 1500);
+		}, 1500); */
 	});
 
 	$('#ct_register_submit').click(function() {

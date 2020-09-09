@@ -925,3 +925,19 @@ Stylesheet Guide
 	.screen-reader-text,
 	.gallery-caption,
 	.bypostauthor { color: #191919;}
+#archive #main-content, #search #main-content, #single #main-content, #page #main-content {
+    margin: 0;
+    min-height: 750px;
+}
+.payment_box.payment_method_stripe{
+	display:block !important;
+}
+li.wc_payment_method.payment_method_stripe img {
+    width: 36px;
+    display: inline-block;
+}
+.header-style-three .user-frontend li.user-logged-in span.user-name {
+    color: #191919;
+    font-size: 14px;
+    font-weight: bold;
+}

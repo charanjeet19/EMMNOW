@@ -152,6 +152,11 @@ margin: 0 auto;
 	width: 600px;
 	text-align: center;
 }
+.elementor-element-948b2b5 .elementor-widget-container .h1.elementor-heading-title.elementor-size-default {
+	width: 47%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 414px) {
   .elementor-4284 .elementor-element.elementor-element-4bc4b06 .elementor-heading-title {

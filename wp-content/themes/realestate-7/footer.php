@@ -117,19 +117,18 @@ if(!empty($ct_options['ct_footer_background_img']['url'])) {
 	
 	$current_user_first_name = get_user_meta( $current_user->data->ID, 'first_name', true );
 	$current_user_last_name = get_user_meta( $current_user->data->ID, 'last_name', true );
-	global $woocommerce;
-$woocommerce->cart->empty_cart();
-if(isset($_GET['service'])){
-$product_id    = intval($_GET['service']);
-$woocommerce->cart->add_to_cart($product_id,1);
-}
+//	global $woocommerce;
+
+//if(isset($_GET['service'])){
+//$woocommerce->cart->empty_cart();
+//$product_id    = intval($_GET['service']);
+//$woocommerce->cart->add_to_cart($product_id,1);
+//}
 
 // Form Utility data 
 $utility_data = $wpdb->get_results("SELECT * FROM utility_form_data WHERE user_id = ".$current_user->data->ID);
 $usps_data = $wpdb->get_results("SELECT * FROM usps_form_data WHERE user_id = ".$current_user->data->ID);
- echo '<pre>';
-print_r($usps_data);
-echo '</pre>'; 
+
 	?>
 	<script>
 	
@@ -177,6 +176,20 @@ echo '</pre>';
 	        var water = '<?php echo $utility_data[0]->water; ?>';
 	        var action2 = '<?php echo $utility_data[0]->action2; ?>';
 	        var fourdigit = '<?php echo $utility_data[0]->fourdigit; ?>';
+			var utfirstName = '<?php echo $utility_data[0]->utfirstName; ?>';
+	        var utlastName = '<?php echo $utility_data[0]->utlastName; ?>';
+	        var utemailAddress = '<?php echo $utility_data[0]->utemailAddress; ?>';
+	        var utphoneNumber = '<?php echo $utility_data[0]->utphoneNumber; ?>';
+	        var utturnOffDate = '<?php echo $utility_data[0]->utturnOffDate; ?>';
+	        var utturnOnDate = '<?php echo $utility_data[0]->utturnOnDate; ?>';
+	        var utoldZipCode = '<?php echo $utility_data[0]->utoldZipCode; ?>';
+	        var utoldCity = '<?php echo $utility_data[0]->utoldCity; ?>';
+	        var utoldState = '<?php echo $utility_data[0]->utoldState; ?>';
+	        var utoldStreet = '<?php echo $utility_data[0]->utoldStreet; ?>';
+	        var utnewZipCode = '<?php echo $utility_data[0]->utnewZipCode; ?>';
+	        var utnewCity = '<?php echo $utility_data[0]->utnewCity; ?>';
+	        var utnewState = '<?php echo $utility_data[0]->utnewState; ?>';
+	        var utnewStreet = '<?php echo $utility_data[0]->utnewStreet; ?>';
 
 	         jQuery('#cep').val(cep);
 			 jQuery('#cep').niceSelect('update'); 
@@ -194,6 +207,22 @@ echo '</pre>';
 	         jQuery('#action2').val(action2);
 			 jQuery('#action2').niceSelect('update'); 
 	         jQuery('#fourdigit').val(fourdigit);
+	         jQuery('#utfirstName').val(utfirstName);
+	         jQuery('#utlastName').val(utlastName);
+	         jQuery('#utemailAddress').val(utemailAddress);
+	         jQuery('#utphoneNumber').val(utphoneNumber);
+	         jQuery('#utturnOffDate').val(utturnOffDate);
+	         jQuery('#utturnOnDate').val(utturnOnDate);
+	         jQuery('#utoldZipCode').val(utoldZipCode);
+	         jQuery('#utoldCity').val(utoldCity);
+	         jQuery('#utoldState').val(utoldState);
+			 jQuery('#utoldState').niceSelect('update');
+	         jQuery('#utoldStreet').val(utoldStreet);
+	         jQuery('#utnewZipCode').val(utnewZipCode);
+	         jQuery('#utnewCity').val(utnewCity);
+	         jQuery('#utnewState').val(utnewState);
+			 jQuery('#utnewState').niceSelect('update');
+	         jQuery('#utnewStreet').val(utnewStreet);
         
         });
 		
@@ -248,8 +277,23 @@ echo '</pre>';
 
         
         });
-
+jQuery(document).ready(function($){
+	jQuery('#ct_keyword').attr("placeholder", "Zip Code");
+});
 	</script>
+	<style>
+	.select2-container--default .select2-selection--single {
+	background-color: #fff;
+	border: 1px solid #d5d9dd !important;
+	border-radius: 4px;
+	height: 43px;
+	padding: 5px 0;
+}
+.woocommerce-ResetPassword.lost_reset_password {
+	margin: 0 auto;
+	width: 50%;
+}
+	</style>
 </footer>
         <!-- //Footer -->
         
